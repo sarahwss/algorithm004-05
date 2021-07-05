@@ -17,7 +17,7 @@
  * 链接：https://leetcode-cn.com/problems/longest-valid-parentheses
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode_32_430 {
+public class LeetCode_32_430_1 {
     class Solution {
         public int longestValidParentheses(String s) {
             int n = s.length();

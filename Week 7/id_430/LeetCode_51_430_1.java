@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by panda on 2019/12/1.
  */
-public class LeetCode_51_430 {
+public class LeetCode_51_430_1 {
     class Solution {
         public List<List<String>> solveNQueens(int n) {
             List<List<String>> res = new ArrayList(n);
