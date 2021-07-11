@@ -50,8 +50,7 @@ package leetcode.editor.cn;//编写一个程序，通过填充空格来解决数
 // 👍 876 👎 0
 
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution_37 {
@@ -60,12 +59,12 @@ class Solution_37 {
         boolean[][] row = new boolean[9][9];
         boolean[][] col = new boolean[9][9];
         boolean[][] box = new boolean[9][9];
-        List<int[]> spaces = new LinkedList<>();
+        List<Integer> spaces = new LinkedList<>();
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 char c = board[i][j];
                 if (c == '.') {
-                    spaces.add(new int[]{i, j});
+                    spaces.add(i * 9 + j);
                 } else {
                     int n = c - '1';
                     row[i][n] = true;
@@ -74,31 +73,54 @@ class Solution_37 {
                 }
             }
         }
-        solveSudoku(board, 0, spaces, row, col, box);
+        solveSudoku(board, spaces, row, col, box);
+    }
+
+    public int getNextPos(List<Integer> spaces, boolean[][] row, boolean[][] col, boolean[][] box) {
+        int min = 10;
+        int index = -1;
+        for (int space : spaces) {
+            int i = space / 9;
+            int j = space % 9;
+            int count = 0;
+            for (int k = 0; k < 9; k++) {
+                if (row[i][k] || col[j][k] || box[i / 3 * 3 + j / 3][k]) {
+                    continue;
+                }
+                count++;
+            }
+            if (count < min) {
+                min = count;
+                index = space;
+            }
+        }
+        return index;
     }
 
 
-    boolean solveSudoku(char[][] board, int index, List<int[]> spaces, boolean[][] row, boolean[][] col,
-                        boolean[][] box) {
-        if (index == spaces.size()) {
+    boolean solveSudoku(char[][] board, List<Integer> spaces, boolean[][] row, boolean[][] col, boolean[][] box) {
+        if (spaces.size() == 0) {
             return true;
         }
-        int[] space = spaces.get(index);
-        int x = space[0];
-        int y = space[1];
+        int space = getNextPos(spaces, row, col, box);
+        int x = space / 9;
+        int y = space % 9;
+        spaces.remove((Integer) space);
         for (int n = 0; n < 9; n++) {
             if (row[x][n] || col[y][n] || box[x / 3 * 3 + y / 3][n]) {
                 continue;
             }
             board[x][y] = (char) ('1' + n);
             row[x][n] = col[y][n] = box[x / 3 * 3 + y / 3][n] = true;
-            if (solveSudoku(board, index + 1, spaces, row, col, box)) {
+            if (solveSudoku(board, spaces, row, col, box)) {
                 System.out.println(true);
                 return true;
             }
             row[x][n] = col[y][n] = box[x / 3 * 3 + y / 3][n] = false;
             board[x][y] = '.';
         }
+        // 方便外层尝试其他解法
+        spaces.add(space);
         return false;
     }
 
