@@ -37,6 +37,7 @@ package leetcode.editor.cn;//n 皇后问题 研究的是如何将 n 个皇后放
 // 👍 929 👎 0
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -65,7 +66,7 @@ class Solution_51 {
             if (col[j] || pie[j + i] || na[i - j + n]) {
                 continue;
             }
-//            System.out.println(i + " " + j);
+            //            System.out.println(i + " " + j);
             col[j] = true;
             pie[i + j] = true;
             na[i - j + n] = true;
@@ -92,4 +93,55 @@ class Solution_51 {
         return res;
     }
 }
+
+class Solution_51_1 {
+
+    public List<List<String>> solveNQueens(int n) {
+        int col = 0, pie = 0, na = 0;
+        List<List<String>> res = new LinkedList<>();
+        solveNQueens(n, col, pie, na, new LinkedList<>(), res);
+        return res;
+
+
+    }
+
+    void solveNQueens(int n, int col, int pie, int na, List<Integer> path, List<List<String>> res) {
+        if (path.size() == n) {
+            res.add(generate(path));
+            return;
+        }
+        // 取得所有可用列
+        int cols = (~(col | pie | na)) & ((1 << n) - 1);
+        while (cols != 0) {
+            // 取得单个可用的列
+            int c = cols & (-cols);
+            // 去掉最后一个1
+            cols = cols & (cols - 1);
+            // 别忘了申请新数组
+            List<Integer> temp = new ArrayList(path);
+            temp.add(c);
+            solveNQueens(n, col | c, (pie | c) << 1, (na | c) >> 1, temp, res);
+        }
+
+    }
+
+    private List<String> generate(List<Integer> path) {
+        List<String> res = new LinkedList<>();
+        int n = path.size();
+        char[] arr = new char[n];
+        Arrays.fill(arr, '.');
+        for (int p : path) {
+            int index = n - Integer.toBinaryString(p).length();
+            arr[index] = 'Q';
+            res.add(new String(arr));
+            arr[index] = '.';
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution_51_1().solveNQueens(4));
+    }
+}
 //leetcode submit region end(Prohibit modification and deletion)
+
