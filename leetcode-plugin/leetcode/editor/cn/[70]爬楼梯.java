@@ -48,4 +48,25 @@ class Solution_70 {
         return memo[n - 1];
     }
 }
+
+class Solution_70_1 {
+
+
+    public int climbStairs(int n) {
+        if (n <= 2) {
+            return n;
+        }
+        int[] dp = new int[n];
+        // 楼梯一级
+        dp[0] = 1;
+        // 楼梯二级
+        dp[1] = 2;
+        for (int i = 2; i < n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n - 1];
+
+    }
+
+}
 //leetcode submit region end(Prohibit modification and deletion)

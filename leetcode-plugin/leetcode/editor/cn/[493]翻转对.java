@@ -27,7 +27,7 @@ package leetcode.editor.cn;//给定一个数组 nums ，如果 i < j 且 nums[i]
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution_493 {
 
     public int reversePairs(int[] nums) {
         return mergeSort(nums, 0, nums.length - 1);
@@ -80,7 +80,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution()
+        System.out.println(new Solution_493()
                 .reversePairs(new int[]{2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647}));
     }
 }
