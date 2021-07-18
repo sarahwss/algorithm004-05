@@ -47,6 +47,44 @@ package leetcode.editor.cn;//给你两个单词 word1 和 word2，请你计算�
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_72_1 {
+
+    public int minDistance(String word1, String word2) {
+        int m = word1.length();
+        int n = word2.length();
+        char[] arr1 = word1.toCharArray();
+        char[] arr2 = word2.toCharArray();
+        // 从word1的前i个字符转换到word2的前j个字符
+        int[][] dp = new int[m + 1][n + 1];
+        for (int i = 0; i < m + 1; i++) {
+            dp[i][0] = i;
+        }
+        for (int i = 0; i <= n; i++) {
+            dp[0][i] = i;
+        }
+        for (int i = 1; i < m + 1; i++) {
+            char c = arr1[i - 1];
+            for (int j = 1; j < n + 1; j++) {
+                if (c != arr2[j - 1]) {
+                    // 修改最后一个字符
+                    // 删除i最后一个字符
+                    // 删除j最后一个字符，相当于增加i最后一个字符
+                    // 别忘了加1
+                    dp[i][j] = Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
+                } else {
+                    // 最后一个字符不需要修改，[i-1][j和[j-1][i]包含[i-1][j-1]，且结果还得加一，所以最小值只考虑dp[i - 1][j - 1]
+                    dp[i][j] = dp[i - 1][j - 1];
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution_72_1().minDistance("horse", "ros"));
+    }
+}
+
 class Solution_72 {
 
     public int minDistance(String word1, String word2) {
