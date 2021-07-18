@@ -21,6 +21,21 @@ package leetcode.editor.cn;//编写一个函数，其作用是将输入的字符
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_344_1 {
+
+    public void reverseString(char[] s) {
+        int i = 0;
+        int j = s.length - 1;
+        while (i < j) {
+            char temp = s[i];
+            s[i] = s[j];
+            s[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
+
 class Solution_344 {
 
     public void reverseString(char[] s) {

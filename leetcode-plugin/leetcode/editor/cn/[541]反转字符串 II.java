@@ -26,6 +26,31 @@ package leetcode.editor.cn;//给定一个字符串 s 和一个整数 k，你需�
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_54_1 {
+
+    public String reverseStr(String s, int k) {
+        int n = s.length();
+        char[] arr = s.toCharArray();
+        // 起点
+        for (int i = 0; i < n; i += 2 * k) {
+            int len = Math.min(k, n - i);
+            reverse(arr, i, i + len - 1);
+        }
+        return new String(arr);
+
+    }
+
+    void reverse(char[] arr, int i, int j) {
+        while (i < j) {
+            char temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
+
 class Solution_54 {
 
     public String reverseStr(String s, int k) {
