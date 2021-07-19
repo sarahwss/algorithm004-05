@@ -55,6 +55,35 @@ package leetcode.editor.cn;//给定一个字符串 s 和一个字符串 t ，计
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
+class Solution_115_2 {
+
+    public int numDistinct(String s, String t) {
+        int m = s.length();
+        int n = t.length();
+        char[] arr1 = s.toCharArray();
+        char[] arr2 = t.toCharArray();
+        int[][] dp = new int[m + 1][n + 1];
+        // 空格是任何字符串的子串，初始化最后一列
+        for (int i = 0; i < m + 1; i++) {
+            dp[i][n] = 1;
+        }
+        // 第一行无须初始化，都是0
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (arr1[i] == arr2[j]) {
+                    // 是否使用i位置的字符，不适用和使用
+                    dp[i][j] = dp[i + 1][j] + dp[i + 1][j + 1];
+                } else {
+                    //
+                    dp[i][j] = dp[i + 1][j];
+                }
+            }
+        }
+        return dp[0][0];
+    }
+}
+
 class Solution_115 {
 
     public int numDistinct(String s, String t) {
