@@ -90,10 +90,11 @@ class Solution_24 {
         ListNode pre = dummy;
         // 两两交换,只要一个变量pre就好
         while (pre.next != null && pre.next.next != null) {
+            ListNode cur = pre.next;
             // 将翻转好的和新翻转好的连接，
             pre.next = reverseTwo(pre.next);
             // 更新翻转后的最后一个节点
-            pre = pre.next.next;
+            pre = cur;
         }
         // 翻转后的头节点
         return dummy.next;
