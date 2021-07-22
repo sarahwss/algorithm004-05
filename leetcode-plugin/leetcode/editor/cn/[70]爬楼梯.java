@@ -28,6 +28,20 @@ package leetcode.editor.cn;//假设你正在爬楼梯。需要 n 阶你才能到
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_70_2 {
+
+    public int climbStairs(int n) {
+        int[] dp = new int[n + 1];
+        // 为了得到dp[2]==2
+        dp[0] = 1;
+        dp[1] = 1;
+        for (int i = 2; i < n + 1; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n];
+    }
+}
+
 class Solution_70 {
 
     int[] memo;
