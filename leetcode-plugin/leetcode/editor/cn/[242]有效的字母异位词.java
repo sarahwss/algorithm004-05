@@ -34,6 +34,31 @@ package leetcode.editor.cn;//给定两个字符串 s 和 t ，编写一个函数
 import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_242_2 {
+
+    // 仅包含小写字母，最多5000个
+    public boolean isAnagram(String s, String t) {
+        int n = t.length();
+        if (s.length() != n) {
+            return false;
+        }
+        char[] arr1 = s.toCharArray();
+        char[] arr2 = t.toCharArray();
+        int[] map = new int[26];
+        for (int i = 0; i < n; i++) {
+            map[arr1[i] - 'a']++;
+        }
+        for (int i = 0; i < n; i++) {
+            int j = arr2[i] - 'a';
+            map[j]--;
+            if (map[j] < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
 class Solution_242 {
 
     public boolean isAnagram(String s, String t) {

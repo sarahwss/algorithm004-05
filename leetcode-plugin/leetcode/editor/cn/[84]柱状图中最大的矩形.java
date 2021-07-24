@@ -38,7 +38,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution_84_1 {
 
     public int largestRectangleArea(int[] heights) {
         int n = heights.length;

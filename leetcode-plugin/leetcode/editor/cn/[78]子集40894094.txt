@@ -1,0 +1,30 @@
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        int n = nums.length;
+        List<List<Integer>> res = new ArrayList();
+        List<Integer> blank  = new ArrayList();
+        // 为了防止每个i都添加一遍空列表，先把空列表添加进去，作为根
+        res.add(blank);
+        for(int i=0;i<n;i++){
+            subsets(nums,n,i,blank,res); 
+        }
+        return res;
+    }
+
+    private void subsets(int[] nums,int n,int i,List<Integer> list,List<List<Integer>> res){  
+        if(i==n){
+            return ;
+        }
+        // list已在结果集中，不能重用
+        List<Integer> temp = new ArrayList(list);
+        temp.add(nums[i]);
+        // 增加包含nums[i]的结果集
+        res.add(temp);
+        // 从i+1开始，往后找，防重复
+        for(int j=i+1;j<n;j++){
+            subsets(nums,n,j,temp,res);
+        }
+    }
+}
+//runtime:1 ms
+//memory:36.2 MB

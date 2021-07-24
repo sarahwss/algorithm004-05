@@ -43,6 +43,53 @@ import java.util.LinkedList;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_51_2 {
+
+    public List<List<String>> solveNQueens(int n) {
+        boolean[] col = new boolean[n];
+        boolean[] pie = new boolean[n * 2];
+        boolean[] na = new boolean[n * 2];
+        List<List<String>> res = new ArrayList<>();
+        solveNQueens(n, 0, res, new ArrayList<>(), col, pie, na);
+        return res;
+    }
+
+    void solveNQueens(int n, int i, List<List<String>> res, List<Integer> list, boolean[] col, boolean[] pie,
+                      boolean[] na) {
+        if (i == n) {
+            res.add(generate(list, n));
+            return;
+        }
+        for (int j = 0; j < n; j++) {
+            if (col[j] || pie[j - i + n] || na[i + j]) {
+                continue;
+            }
+            list.add(j);
+            col[j] = true;
+            pie[j - i + n] = true;
+            na[i + j] = true;
+            solveNQueens(n, i + 1, res, list, col, pie, na);
+            list.remove(i);
+            col[j] = false;
+            pie[j - i + n] = false;
+            na[i + j] = false;
+        }
+    }
+
+    private List<String> generate(List<Integer> list, int n) {
+        List<String> res = new ArrayList<>();
+        char[] arr = new char[n];
+        Arrays.fill(arr, '.');
+        for (Integer i : list) {
+            int j = n - i - 1;
+            arr[j] = 'Q';
+            res.add(new String(arr));
+            arr[j] = '.';
+        }
+        return res;
+    }
+}
+
 class Solution_51 {
 
     public List<List<String>> solveNQueens(int n) {
