@@ -45,10 +45,126 @@ package leetcode.editor.cn;//字典 wordList 中从单词 beginWord 和 endWord 
 // 👍 794 👎 0
 
 
-import javax.management.StandardEmitterMBean;
 import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+class Solution_127_2 {
+
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (!wordList.contains(endWord)) {
+            return 0;
+        }
+        int n = beginWord.length();
+        // 注意这里是set，否则会造成结果重复
+        Map<String, Set<String>> dict = new HashMap<>();
+        for (String s : wordList) {
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < n; i++) {
+                char c = arr[i];
+                arr[i] = '*';
+                String key = new String(arr);
+                dict.putIfAbsent(key, new HashSet<>());
+                dict.get(key).add(s);
+                arr[i] = c;
+            }
+        }
+        Deque<String> deque1 = new ArrayDeque<>();
+        Map<String, Integer> visited1 = new HashMap<>();
+        Deque<String> deque2 = new ArrayDeque<>();
+        Map<String, Integer> visited2 = new HashMap<>();
+        deque1.offerFirst(beginWord);
+        visited1.put(beginWord, 1);
+        deque2.offerFirst(endWord);
+        visited2.put(endWord, 1);
+        // 注意这里是&&，有一个为空的话代表没有其它路径了
+        while (!deque1.isEmpty() && !deque2.isEmpty()) {
+            // 默认visited1i少
+            if (visited1.size() > visited2.size()) {
+                Deque<String> q = deque1;
+                deque1 = deque2;
+                deque2 = q;
+                Map<String, Integer> v = visited1;
+                visited1 = visited2;
+                visited2 = v;
+            }
+            String s = deque1.pollLast();
+            int c1 = visited1.get(s);
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < n; i++) {
+                char c = arr[i];
+                arr[i] = '*';
+                String key = new String(arr);
+                for (String str : dict.getOrDefault(key, Collections.emptySet())) {
+                    // 加入之前先判断，防止多余加入队列
+                    Integer c2 = visited2.get(str);
+                    if (c2 != null) {
+                        return c1 + c2;
+                    }
+                    if (!visited1.containsKey(str)) {
+                        deque1.offerFirst(str);
+                        visited1.put(str, c1 + 1);
+                    }
+                }
+                arr[i] = c;
+            }
+        }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution_127_2().ladderLength("hot", "dog", Arrays.asList("hot", "dog")));
+    }
+}
+
+class Solution_127_1 {
+
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (!wordList.contains(endWord)) {
+            return 0;
+        }
+        int n = beginWord.length();
+        // 注意这里是set，虽然List也不影响结果
+        Map<String, Set<String>> dict = new HashMap<>();
+        for (String s : wordList) {
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < n; i++) {
+                char c = arr[i];
+                arr[i] = '*';
+                String key = new String(arr);
+                dict.putIfAbsent(key, new HashSet<>());
+                dict.get(key).add(s);
+                arr[i] = c;
+            }
+        }
+        Deque<String> deque = new ArrayDeque<>();
+        Map<String, Integer> visited = new HashMap<>();
+        deque.offerFirst(beginWord);
+        visited.put(beginWord, 1);
+        while (!deque.isEmpty()) {
+            String s = deque.pollLast();
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < n; i++) {
+                char c = arr[i];
+                arr[i] = '*';
+                String key = new String(arr);
+                for (String str : dict.getOrDefault(key, Collections.emptySet())) {
+                    // 加入之前先判断，防止多余加入队列
+                    if (str.equals(endWord)) {
+                        return visited.get(s) + 1;
+                    }
+                    if (!visited.containsKey(str)) {
+                        deque.offerFirst(str);
+                        visited.put(str, visited.get(s) + 1);
+                    }
+                }
+                arr[i] = c;
+            }
+        }
+        return 0;
+    }
+}
+
+// 双向BFS
 class Solution_127 {
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
@@ -69,7 +185,6 @@ class Solution_127 {
                 arr[i] = temp;
             }
         }
-        System.out.println(map);
         if (!endExists) {
             return 0;
         }
@@ -91,7 +206,6 @@ class Solution_127 {
                 visited1 = visited2;
                 visited2 = v;
             }
-            System.out.println(queue1);
             String s = queue1.poll();
             char[] arr = s.toCharArray();
             for (int i = 0; i < n; i++) {

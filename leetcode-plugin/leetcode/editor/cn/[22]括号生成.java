@@ -27,11 +27,66 @@ package leetcode.editor.cn;//数字 n 代表生成括号的对数，请你设计
 // 👍 1863 👎 0
 
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+// BFS
+class Solution_22_4 {
+
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        Deque<String> deque = new ArrayDeque<>();
+        Map<String, Integer> left = new HashMap<>();
+        deque.offerFirst("");
+        left.put("", 0);
+        while (!deque.isEmpty()) {
+            String s = deque.pollLast();
+            if (s.length() == 2 * n) {
+                res.add(s);
+                continue;
+            }
+            int l = left.get(s);
+            if (l < n) {
+                String str = s + "(";
+                deque.offerFirst(str);
+                left.put(str, l + 1);
+            }
+            if (s.length() - l < l) {
+                String str = s + ")";
+                deque.offerFirst(str);
+                // 别少加
+                left.put(str, l);
+            }
+        }
+        return res;
+    }
+}
+
+// DFS
+class Solution_22_3 {
+
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        generateParenthesis(n, 0, new StringBuilder(), res);
+        return res;
+    }
+
+    private void generateParenthesis(int n, int left, StringBuilder sb, List<String> res) {
+        if (sb.length() == n * 2) {
+            res.add(sb.toString());
+        }
+        // 可以放左括号
+        if (left < n) {
+            generateParenthesis(n, left + 1, sb.append('('), res);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        if (sb.length() - left < left) {
+            generateParenthesis(n, left, sb.append(')'), res);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+}
+
 class Solution_22_2 {
 
     public List<String> generateParenthesis(int n) {
@@ -61,6 +116,7 @@ class Solution_22_2 {
         }
     }
 }
+
 // 非回溯，不推荐
 class Solution_22_1 {
 

@@ -44,7 +44,100 @@ package leetcode.editor.cn;//给你一个由 '1'（陆地）和 '0'（水）组�
 // 👍 1212 👎 0
 
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 //leetcode submit region begin(Prohibit modification and deletion)
+// BFS
+class Solution_200_2 {
+
+    public int numIslands(char[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int count = 0;
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == '1') {
+                    count++;
+                    grid[i][j] = '0';
+                    deque.offerFirst(i * n + j);
+                    // 对每个元素进行BFS
+                    BFS(deque, m, n, grid);
+                    //不需要clear队列，队列此时一定为空
+                }
+            }
+        }
+        return count;
+    }
+
+    void BFS(Deque<Integer> deque, int m, int n, char[][] grid) {
+        int[] dx = new int[]{-1, 1, 0, 0};
+        int[] dy = new int[]{0, 0, -1, 1};
+        while (!deque.isEmpty()) {
+            Integer index = deque.pollLast();
+            int i = index / n;
+            int j = index % n;
+            // 这里不需要判断是否为0，前面已经修改为0
+            for (int k = 0; k < 4; k++) {
+                int x = i + dx[k];
+                int y = j + dy[k];
+                if (x < 0 || x >= m || y < 0 || y >= n) {
+                    continue;
+                }
+                if (grid[x][y] == '1') {
+                    grid[x][y] = '0';
+                    deque.offerFirst(x * n + y);
+                }
+            }
+        }
+    }
+}
+
+// DFS
+class Solution_200_1 {
+
+    public int numIslands(char[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int count = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                // 注意别忘了判断，减少多余递归
+                if (grid[i][j] == '1') {
+                    count++;
+                    DFS(grid, i, j, m, n);
+                }
+            }
+        }
+        return count;
+    }
+
+    void DFS(char[][] grid, int i, int j, int m, int n) {
+        if (grid[i][j] == '0') {
+            return;
+        }
+        grid[i][j] = '0';
+        int[] dx = new int[]{-1, 1, 0, 0};
+        int[] dy = new int[]{0, 0, -1, 1};
+        for (int k = 0; k < 4; k++) {
+            int x = i + dx[k];
+            int y = j + dy[k];
+            // 注意这里有等号
+            if (x < 0 || x >= m || y < 0 || y >= n) {
+                continue;
+            }
+            DFS(grid, x, y, m, n);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution_200_1().numIslands(
+                new char[][]{{'1', '1', '0', '0', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '1', '0', '0'},
+                        {'0', '0', '0', '1', '1'}}));
+    }
+}
+
 class Solution_200 {
 
     class UnionFind {

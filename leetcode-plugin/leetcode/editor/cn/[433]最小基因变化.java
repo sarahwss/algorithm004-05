@@ -57,6 +57,49 @@ import com.sun.org.apache.bcel.internal.generic.FADD;
 import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+//BFS
+class Solution_433_1 {
+
+    public int minMutation(String start, String end, String[] bank) {
+        int n = start.length();
+        Set<String> set = new HashSet<>(n);
+        for (String b : bank) {
+            set.add(b);
+        }
+        if (!set.contains(end)) {
+            return -1;
+        }
+        char[] genes = new char[]{'A', 'C', 'G', 'T'};
+        Deque<String> deque = new ArrayDeque<>();
+        Map<String, Integer> visited = new HashMap<>();
+        deque.offerFirst(start);
+        visited.put(start, 0);
+        while (!deque.isEmpty()) {
+            String s = deque.pollLast();
+//            System.out.println("s:" + s);
+            int c1 = visited.get(s);
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < n; i++) {
+                char c = arr[i];
+                for (int j = 0; j < 4; j++) {
+                    arr[i] = genes[j];
+                    String key = new String(arr);
+//                    System.out.println("key:" + key);
+                    if (key.equals(end)) {
+                        return c1 + 1;
+                    }
+                    if (set.contains(key) && !visited.containsKey(key)) {
+                        deque.offerFirst(key);
+                        visited.put(key, c1 + 1);
+                    }
+                }
+                arr[i] = c;
+            }
+        }
+        return -1;
+    }
+}
+
 class Solution_433 {
 
     public int minMutation(String start, String end, String[] bank) {
