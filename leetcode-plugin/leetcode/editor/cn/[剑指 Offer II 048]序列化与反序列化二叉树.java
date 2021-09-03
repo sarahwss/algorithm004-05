@@ -1,15 +1,14 @@
 package leetcode.editor.cn;//序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方
 //式重构得到原数据。 
 //
-// 请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串
-//反序列化为原始的树结构。 
-//
-// 提示: 输入输出格式与 LeetCode 目前使用的方式一致，详情请参阅 LeetCode 序列化二叉树的格式。你并非必须采取这种方式，你也可以采用其他的
-//方法解决这个问题。 
+// 请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反
+//序列化为原始的树结构。 
 //
 // 
 //
 // 示例 1： 
+//
+// 
 //
 // 
 //输入：root = [1,2,3,null,null,4,5]
@@ -42,16 +41,21 @@ package leetcode.editor.cn;//序列化是将一个数据结构或者对象转换
 // 提示： 
 //
 // 
+// 输入输出格式与 LeetCode 目前使用的方式一致，详情请参阅 LeetCode 序列化二叉树的格式。你并非必须采取这种方式，也可以采用其他的方法解决这
+//个问题。 
 // 树中结点数在范围 [0, 104] 内 
 // -1000 <= Node.val <= 1000 
 // 
+//
+// 
+//
+// 注意：本题与主站 297 题相同：https://leetcode-cn.com/problems/serialize-and-deserialize-b
+//inary-tree/ 
 // Related Topics 树 深度优先搜索 广度优先搜索 设计 字符串 二叉树 
-// 👍 599 👎 0
+// 👍 1 👎 0
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-
-import java.util.*;
 
 /**
  * Definition for a binary tree node.
@@ -62,7 +66,7 @@ import java.util.*;
  * TreeNode(int x) { val = x; }
  * }
  */
-class Codec_207 {
+class Codec_剑指048 {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
@@ -71,38 +75,40 @@ class Codec_207 {
         return sb.toString();
     }
 
-    void serialize(TreeNode root, StringBuffer sb) {
-        // root不等于Null很重要，不能无限添加下去
+    public void serialize(TreeNode root, StringBuffer sb) {
         if (root == null) {
-            sb.append("null").append(",");
+            sb.append("#");
+            // 别少了return
             return;
         }
-        sb.append(root.val).append(",");
+        // 不为Null别忘了序列化
+        sb.append(root.val);
+        sb.append(",");
+        // 注意这些不为null时才处理
         serialize(root.left, sb);
+        sb.append(",");
         serialize(root.right, sb);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        Deque<String> deque = new ArrayDeque<>(Arrays.asList(data.split(",")));
-        TreeNode root = deserialize(deque);
-        return root;
+        String[] strs = data.split(",");
+        // 需要每次递归都将序号递增，并在方法返回时传回，普通int型做不到，数组元素可以做到
+        return deserialize(strs, new int[1]);
     }
 
-    // 第i行，第j个元素
-    TreeNode deserialize(Deque<String> deque) {
-        // 这一行应有的元素数
-        if (deque.isEmpty()) {
+    private TreeNode deserialize(String[] strs, int[] i) {
+        // 最后一个元素一定是#，不需要判断数组是否遍历完
+        String s = strs[i[0]];
+        // 每进入一层，序号加1，注意要在第一个返回之前
+        i[0]++;
+        if (s.equals("#")) {
             return null;
         }
-        String value = deque.pollFirst();
-        if (value.equals("null")) {
-            return null;
-        }
-        TreeNode root = new TreeNode(Integer.valueOf(value));
-        root.left = deserialize(deque);
-        root.right = deserialize(deque);
-        return root;
+        TreeNode node = new TreeNode(Integer.parseInt(s));
+        node.left = deserialize(strs, i);
+        node.right = deserialize(strs, i);
+        return node;
     }
 }
 
