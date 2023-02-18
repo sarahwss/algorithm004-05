@@ -1,6 +1,6 @@
 # @author:leacoder 
 # @des:  位运算 + DFS 深度优先  N皇后II
-class Solution:
+class Solution_39:
     def totalNQueens(self, n: int) -> int:
         if n < 1: return []
         self.count = 0

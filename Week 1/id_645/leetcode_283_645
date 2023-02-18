@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution_39 {
     public void moveZeroes(int[] nums) {
         int p1 = 0;
         int p2 = 0;

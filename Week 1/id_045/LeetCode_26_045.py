@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  双指针法  删除排序数组中的重复项
 
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         count = 0 # 慢指针
         for i in range(1,len(nums)): # 快指针

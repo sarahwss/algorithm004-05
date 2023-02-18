@@ -35,13 +35,13 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
         pass
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     commands = [4, -1, 3],
     obstacles = []

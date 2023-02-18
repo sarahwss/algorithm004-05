@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def solveNQueens(self, n: int) -> List[List[str]]:
         cols = set()
         xy_diff = set()

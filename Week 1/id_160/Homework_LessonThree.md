@@ -3,7 +3,7 @@
 
 解法
 ```
-    class Solution {
+    class Solution_39 {
     public:
         int removeDuplicates(vector<int> &nums) {
             if (nums.empty()) {
@@ -27,7 +27,7 @@
 
 解法1:暴力解决,一步一步移动
 ```
-    class Solution {
+    class Solution_39 {
     public:
         void rotate(vector<int>& nums, int k) {
             if(k>=nums.size())
@@ -57,7 +57,7 @@
  3. 在指定位置loc前插入区间[start, end)的所有元素.
  
 ```
-    class Solution {
+    class Solution_39 {
     public:
         void rotate(vector<int>& nums, int k) {
             int len = nums.size();
@@ -73,7 +73,7 @@
 解法3:
 - 用一个大小相同得数组存放移动后得正确位置，再写入原数组中
 ```
-    class Solution {
+    class Solution_39 {
     public:
         void rotate(vector<int>& nums, int k) {
             int length = nums.size();
@@ -95,7 +95,7 @@
 
 解法1 
 ```
-    class Solution {
+    class Solution_39 {
     public:
         ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
             ListNode* resultListHead = NULL;
@@ -151,7 +151,7 @@
 
 - 迭代
 ```
-    class Solution {
+    class Solution_39 {
     public:
         ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
             ListNode* prehead = new ListNode(-1);
@@ -180,7 +180,7 @@
 解法
 
 ```
-    class Solution {
+    class Solution_39 {
     public:
         vector<int> twoSum(vector<int> &nums, int target) {
             int i = 0;
@@ -206,7 +206,7 @@
 解法
 
 ```
-    class Solution {
+    class Solution_39 {
     public:
         void moveZeroes(vector<int>& nums) {
             int j = 0;

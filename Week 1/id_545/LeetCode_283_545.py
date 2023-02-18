@@ -1,6 +1,6 @@
 ## 移动零
 # 统计法 时间：O(n) 空间：O(1)
-# class Solution:
+# class Solution_39:
 #     def moveZeroes(self, nums: List[int]) -> None:
 #         n = 0
 #         for i in range(0, len(nums)):
@@ -15,7 +15,7 @@
 ##########################################################
 
 # 快慢指针 时间：O(n) 空间：O(1)
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         s = 0
         for f in range(0, len(nums)):

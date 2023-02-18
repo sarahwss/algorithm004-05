@@ -1,7 +1,7 @@
 ## 590. N叉树的后序遍历
 
 # 递归
-class Solution:
+class Solution_39:
     def __init__(self):
         self.arr = []
     def postorder(self, root: 'Node') -> List[int]:
@@ -12,7 +12,7 @@ class Solution:
         return self.arr
 
 # 栈 迭代法
-# class Solution:
+# class Solution_39:
 #     def postorder(self, root: 'Node') -> List[int]:
 #         if not root: return []
 #         stack = [root]

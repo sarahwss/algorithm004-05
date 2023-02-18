@@ -44,7 +44,7 @@
 #         self.left = None
 #         self.right = None
 # DFS
-# class Solution:
+# class Solution_39:
 #     def levelOrder(self, root: TreeNode) -> List[List[int]]:
 #         levels = []
 #         if not root:
@@ -64,7 +64,7 @@
 #         helper(root,0)
 #         return levels
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         levels = []
         if not root:

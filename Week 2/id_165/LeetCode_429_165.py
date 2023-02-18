@@ -36,7 +36,7 @@ class Node(object):
         self.children = children
 
 
-class Solution(object):
+class Solution_39(object):
 
     def __init__(self):
 

@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     private List<List<String>> result = new ArrayList<>(); 
     public List<List<String>> solveNQueens(int n) {
         boolean[] visited = new boolean[n];
@@ -10,7 +10,7 @@ class Solution {
     }
 
     public void helper(int level, int n, List<String> list, boolean[] visited, boolean[] diag1, boolean[] diag2) {
-        //terminator Ò»Ö±ÏÂ×ªµ½×îºóÒ»²ãÖ®ºó£¬ËµÃ÷ËµÓÐ²ã¶¼ÕÒµ½ºÏÊÊµÄÎ»ÖÃ
+        //terminator Ò»Ö±ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ö®ï¿½ï¿½Ëµï¿½ï¿½Ëµï¿½Ð²ã¶¼ï¿½Òµï¿½ï¿½ï¿½ï¿½Êµï¿½Î»ï¿½ï¿½
         if(level == n) {
             result.add(new ArrayList<String>(list));
             return;
@@ -28,11 +28,11 @@ class Solution {
             list.add(charString);
             visited[i] = true;
             diag1[level+i] = true;
-            //ÐÐÖµ-ÁÐÖµ¿ÉÄÜÐ¡ÓÚ0£¬¼ÓÉÏÒ»¸öÕýÊýN-1,±£Ö¤ÎªÕýÊý£¬Í¬Ê±²»»áÊý×éÔ½½ç
+            //ï¿½ï¿½Öµ-ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½N-1,ï¿½ï¿½Ö¤Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½
             diag2[level-i+n-1] = true;
             
             helper(level+1, n, list, visited, diag1, diag2);
-            //»Øµ½µ±Ç°²ã£¬°Ñµ±Ç°²ãµÄÊý¾ÝÇå³ý£¬¼ÌÐøÊÔÏÂÒ»¸öÁÐ£¬ÌåÏÖ»ØËÝ
+            //ï¿½Øµï¿½ï¿½ï¿½Ç°ï¿½ã£¬ï¿½Ñµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½
             list.remove(list.size()-1);
             visited[i] = false;
             diag1[level+i] = false;

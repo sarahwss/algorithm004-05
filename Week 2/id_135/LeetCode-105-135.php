@@ -8,7 +8,7 @@
  *     function __construct($value) { $this->val = $value; }
  * }
  */
-class Solution {
+class Solution_39 {
 
     /**
      * @param Integer[] $preorder

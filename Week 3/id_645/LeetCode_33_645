@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution_39 {
     public int search(int[] nums, int target) {
         int hi = nums.length -1;
         int lo = 0;

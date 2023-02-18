@@ -1,5 +1,5 @@
 # 21. 合并两个有序链表
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         # 法1
         if l1 and l2:

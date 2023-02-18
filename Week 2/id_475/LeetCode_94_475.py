@@ -7,7 +7,7 @@
 #         self.right = None
 
 # 第一遍：递归实现
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
         # 实现中序遍历函数

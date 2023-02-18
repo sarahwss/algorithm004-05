@@ -1,6 +1,6 @@
 <?php
 
-class Solution
+class Solution_39
 {
 
     /**
@@ -60,5 +60,5 @@ $beginWord = "hit";
 $endWord = "cog";
 $wordList = ["hot", "dot", "dog", "lot", "log", "cog"];
 
-$c = new Solution();
+$c = new Solution_39();
 print_r($c->findLadders($beginWord, $endWord, $wordList));

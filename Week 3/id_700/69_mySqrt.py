@@ -22,7 +22,7 @@ def binaryResearch(nums,target,):
         if nums[mid] > target:
             right = mid -1
 
-class Solution:
+class Solution_39:
     def mySqrt(self,x):
         left = 0
         right = x
@@ -36,7 +36,7 @@ class Solution:
                 right = mid - 1
 
 
-class Solution:
+class Solution_39:
     def mySqrt(self,x):
         left , right = 0 , x
         while left <= right:

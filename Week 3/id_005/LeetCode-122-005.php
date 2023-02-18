@@ -1,5 +1,5 @@
 <?php
-class Solution
+class Solution_39
 {
     /**
      * 执行用时 :20 ms, 在所有 php 提交中击败了65.48%的用户

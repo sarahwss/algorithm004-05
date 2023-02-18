@@ -1,6 +1,6 @@
 ## 合并两个有序链表
 # 迭代法 时间：O(n) 空间：O(1)
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         preHead = ListNode(-1)
         prev = preHead

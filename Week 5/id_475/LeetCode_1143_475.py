@@ -2,7 +2,7 @@
 # 第一遍
 # DP
 # 法一：
-class Solution:
+class Solution_39:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         if not text1 or not text2:
             return 0
@@ -35,7 +35,7 @@ class Solution:
         return dp[row-1][col-1]
 
 # 法一的优化代码：改变循环的边界，把初始化归纳到两个for循环中
-class Solution(object):
+class Solution_39(object):
     def longestCommonSubsequence(self, text1, text2):
         """
         :type text1: str

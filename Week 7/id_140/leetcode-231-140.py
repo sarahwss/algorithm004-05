@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def isPowerOfTwo(self, n):
         if n==1:
             return True

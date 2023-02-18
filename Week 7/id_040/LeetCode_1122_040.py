@@ -32,7 +32,7 @@
 #leetcode submit region begin(Prohibit modification and deletion)
 from typing import List
 
-class Solution:
+class Solution_39:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
         """ 缓存 """
         a = [0 for _ in range(max(arr1)+1)]
@@ -56,7 +56,7 @@ class Solution:
 
 #leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     arr1 = [2,3,1,3,2,4,6,7,9,2,19, 0, 8]
     arr2 = [2,1,4,3,9,6]
 

@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         n = len(M)
         p = [i for i in range(n)]

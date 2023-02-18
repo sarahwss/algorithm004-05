@@ -1,6 +1,6 @@
 ## 加一
 # 方法一： 数组转数字  时间：O(n) 空间：O(n)
-# class Solution:
+# class Solution_39:
 #     def plusOne(self, digits: List[int]) -> List[int]:
 #         length = len(digits)
 #         sum = 0
@@ -13,7 +13,7 @@
 ##################################################################
 
 # 方法二： 使用内置函数  时间：O(n) 空间：O(n)
-# class Solution:
+# class Solution_39:
 #     def plusOne(self, digits: List[int]) -> List[int]:
 #         sum = int(''.join(list(map(str, digits)))) + 1
 #         return list( map(int, list(str(sum))) )
@@ -22,7 +22,7 @@
 
 # 方法三： 冒泡法 时间：O(n) 空间：O(1)
 
-class Solution:
+class Solution_39:
     def plusOne(self, digits: List[int]) -> List[int]:
         i = len(digits)
         digits[i-1] += 1

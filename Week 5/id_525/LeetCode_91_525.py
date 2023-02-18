@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def numDecodings(self, s):
         """
         :type s: str

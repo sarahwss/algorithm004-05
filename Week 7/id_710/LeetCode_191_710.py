@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-class Solution:
+class Solution_39:
     def hammingWeight_0(self, n: int) -> int:
         """
         利用python的bin函数,将整数转化为二进制;然后利用count函数,统计二进制数中1的个数
@@ -68,7 +68,7 @@ class Solution:
         return count
 
 
-s = Solution()
+s = Solution_39()
 print(s.hammingWeight_0(5))
 print(s.hammingWeight_1(5))
 print(s.hammingWeight_2(5))

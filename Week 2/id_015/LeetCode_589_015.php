@@ -13,7 +13,7 @@ class Node {
     }
 }
 */
-class Solution {
+class Solution_39 {
     /**
      * @param Node $root
      * @return Integer[]

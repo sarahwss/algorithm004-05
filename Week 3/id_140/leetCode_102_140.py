@@ -12,7 +12,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Solution_39:
     # 深度有限遍历
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         # 存放最终结果的数组levels

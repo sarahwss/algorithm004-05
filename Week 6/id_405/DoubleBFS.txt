@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> wordList_ = new HashSet<String>(wordList);
         Set<String> begSet = new HashSet<String>(),

@@ -6,7 +6,7 @@ i：用于遍历 整个数组
 j: 指向非0数位置
 遍历数组，将非0数填入j所在位置j后移，将 j位置到最后补0
 '''
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         length = len(nums)
         j = 0

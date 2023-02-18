@@ -29,7 +29,7 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 # 环形数组
-class Solution(object):
+class Solution_39(object):
     def rotate(self, nums, k):
         """
         :type nums: List[int]

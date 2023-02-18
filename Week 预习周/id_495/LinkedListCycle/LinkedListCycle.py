@@ -8,7 +8,7 @@ class ListNode(object):
         self.next = None
 
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def detectCycle(head):
@@ -35,4 +35,4 @@ if __name__ == '__main__':
     a.next = b
     b.next = c
     c.next = a
-    print(Solution.detectCycle(a))
+    print(Solution_39.detectCycle(a))

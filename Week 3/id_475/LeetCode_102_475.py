@@ -1,6 +1,6 @@
 # BFS
 # 法一
-class Solution:
+class Solution_39:
     def levelOrder(self,root):
         """利⽤队列实现树的层次遍历"""
         if root == None:
@@ -18,7 +18,7 @@ class Solution:
         return res
 
 # 法二
-class Solution:
+class Solution_39:
     def levelOrder(self, root):
         """利用数组进行层次遍历"""
         if not root:
@@ -47,7 +47,7 @@ class Solution:
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         """迭代法：数组实现二叉树层次遍历"""
         if not root:
@@ -75,7 +75,7 @@ class Solution:
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         """队列实现二叉树层次遍历"""
         if not root:

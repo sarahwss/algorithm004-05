@@ -1,5 +1,5 @@
 逻辑是 先把数组最后一位+1，然后循环数组的元素当元素为10的时候进位
-class Solution {
+class Solution_39 {
     public int[] plusOne(int[] digits) {
        digits[digits.length-1]=digits[digits.length-1]+1;      
        for(int i = digits.length-1;i>=0;i--){

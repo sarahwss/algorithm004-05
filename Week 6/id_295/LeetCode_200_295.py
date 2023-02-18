@@ -27,7 +27,7 @@ from typing import List
 
 # 时间复杂度: O(m*n) 其中 m 和 n 分别为行数和列数。注意当使用路径压缩和排名结合并实现并查集时，并操作只需要消耗常数时间。
 # 空间复杂度: O(m*n) 并查集数据结构需要的空间
-class Solution:
+class Solution_39:
     def numIslands(self, grid: List[List[str]]) -> int:
         if len(grid) == 0: return 0
         row = len(grid);

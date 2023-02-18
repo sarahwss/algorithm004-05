@@ -1,4 +1,4 @@
-# class Solution(object):
+# class Solution_39(object):
 #     def minDistance(self, word1, word2):
 #         """
 #         :type word1: str
@@ -22,7 +22,7 @@
 #         return dp[-1][-1]
 
 
-class Solution(object):
+class Solution_39(object):
     def minDistance(self, word1, word2):
         l1, l2 = len(word1)+1, len(word2)+1
         pre = [0 for _ in xrange(l2)]

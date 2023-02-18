@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def search(self, nums, target):
         left = 0 ; right = len(nums) - 1
         while left < right:

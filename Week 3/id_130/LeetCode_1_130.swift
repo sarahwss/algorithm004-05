@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     
    var sortedDic = [String:Int]()
    var visted = [String:[String]]()

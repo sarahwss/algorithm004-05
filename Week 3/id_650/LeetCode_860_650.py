@@ -69,7 +69,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def lemonadeChange(self, bills: List[int]) -> bool:
         """
         写完了发现不需要用hash

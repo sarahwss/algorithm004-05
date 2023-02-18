@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         num_row = len(matrix)
         if num_row != 0:

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
         wordList = set(wordList)
         queue = collections.deque([[beginWord, 1]])

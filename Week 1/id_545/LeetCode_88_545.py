@@ -1,6 +1,6 @@
 ## 合并两个有序数组
 # 方法一：合并后排序 时间：O( (m+n)log(m+n) ) 空间： O(1)
-# class Solution:
+# class Solution_39:
 #     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
 #         i = 0
 #         while i < n:
@@ -11,7 +11,7 @@
 ###############################################################################################
 
 # 方法二： 使用切片 时间：O( (m+n)log(m+n) ) 空间： O(1)
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums1[m:] = nums2[:n]
         nums1.sort()
@@ -19,7 +19,7 @@ class Solution:
 ###############################################################################################
 
 # 方法三： 双指针 前往后  时间：O(n + m)O(n+m) 空间：O(m)
-# class Solution:
+# class Solution_39:
 #     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
 #         arr = nums1[:m]
 #         nums1[:] = []

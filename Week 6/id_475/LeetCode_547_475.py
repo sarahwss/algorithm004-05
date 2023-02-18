@@ -1,7 +1,7 @@
 # 朋友圈
 # 第一遍
 # 并查集
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         if not M: return 0
 

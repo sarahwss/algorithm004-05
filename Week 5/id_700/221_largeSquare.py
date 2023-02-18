@@ -23,7 +23,7 @@
 ###     联想到岛屿的计数问题，广度搜索BFS，炸沉的方法
 
 
-class Solution:
+class Solution_39:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         if not matrix: return 0
         row = len(matrix)

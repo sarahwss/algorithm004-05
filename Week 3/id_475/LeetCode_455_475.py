@@ -1,6 +1,6 @@
 # 分发饼干
 # 第一遍：贪心算法
-class Solution(object):
+class Solution_39(object):
     def findContentChildren(self, g, s):
         """
         :type g: List[int]

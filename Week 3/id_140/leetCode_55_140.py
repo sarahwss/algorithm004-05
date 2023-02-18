@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def canJump(self, nums: List[int]) -> bool:
     	n = len(nums)
     	if n <= 1:

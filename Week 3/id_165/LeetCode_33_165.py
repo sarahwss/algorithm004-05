@@ -22,7 +22,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution(object):
+class Solution_39(object):
 
     def find_min(self, nums):
 
@@ -80,7 +80,7 @@ class Solution(object):
             return self.find_target(nums, target, 0, min_idx)
 
 
-print(Solution().find_min([8,9,2,3,4,5,6]))
+print(Solution_39().find_min([8,9,2,3,4,5,6]))
 
 
 # leetcode submit region end(Prohibit modification and deletion)

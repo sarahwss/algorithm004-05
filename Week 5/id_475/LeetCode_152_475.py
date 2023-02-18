@@ -3,7 +3,7 @@
 # DP：a.重复性
 #     b.定义状态数组：一维
 #     c.DP方程：dp[i] = max(nums[i] * pre_max, nums[i] * pre_min, nums[i])
-class Solution:
+class Solution_39:
     def maxProduct(self, nums: List[int]) -> int:
         if not nums: return 
         res = nums[0]

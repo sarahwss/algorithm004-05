@@ -1,5 +1,5 @@
 ## 搜索二维矩阵
-class Solution:
+class Solution_39:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         if len(matrix)==0 : return False
         rows = len(matrix)

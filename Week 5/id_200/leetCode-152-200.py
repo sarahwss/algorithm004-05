@@ -2,7 +2,7 @@
 
 
 
-class Solution:
+class Solution_39:
     def maxProduct(self, nums: List[int]) -> int:
         if nums is None: return 0
         res,curmax,curmin=nums[0],nums[0],nums[0]

@@ -18,7 +18,7 @@ class disjoint_set:
             self.array[tmp] = root
         return root
         
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         num = len(M)
         if num == 0:
@@ -34,7 +34,7 @@ class Solution:
         return len(set([dset.find(i) for i in dset.array]))
     
 # using dfs
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         n = len(M)
         if n == 0:
@@ -59,7 +59,7 @@ class Solution:
         return count
 
 # using bfs
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         n = len(M)
         if n == 0:

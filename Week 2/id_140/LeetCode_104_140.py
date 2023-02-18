@@ -12,7 +12,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Solution_39:
     def maxDepth(self, root):
         maxlevel = 0
         if root is None :
@@ -22,6 +22,6 @@ class Solution:
             right_height = self.maxDepth(root.right) 
             return max(left_height, right_height) + 1
 if __name__ == '__main__':
-	s = Solution()
+	s = Solution_39()
 	tree = TreeNode([3,9,20,None,None,15,7])
 	print(s.maxDepth(tree))

@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/lemonade-change/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * @param Integer[] $bills
@@ -39,7 +39,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $bills = [5,5,5,10,20]; // 7
 $index = $solution->lemonadeChange($bills);
 var_dump($index);

@@ -1,5 +1,5 @@
 
-class Solution:
+class Solution_39:
     def rotate_1(self, nums, k) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -43,6 +43,6 @@ if __name__ == '__main__':
     testCase = [1, 3, 4, 5, 6]
     k = 6
     print("Origin: ", testCase, " k:", k)
-    solution = Solution()
+    solution = Solution_39()
     solution.rotate(testCase, k)
     print("Rotated: ", testCase)

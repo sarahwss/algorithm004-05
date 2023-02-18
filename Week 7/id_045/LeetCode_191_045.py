@@ -1,7 +1,7 @@
 # @author:leacoder 
 # @des: 32位均判断 位1的个数
 
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         count = 0   #位1 计数
         mask = 1    #
@@ -16,7 +16,7 @@ class Solution(object):
 # @des: 利用X & (X-1)   位1的个数
 
 # X & (X-1) 清零最低位的 1
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         count = 0   #位1 计数
         while n:

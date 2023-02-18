@@ -44,7 +44,7 @@ class TreeNode(object):
 # 遍历一遍二叉树，分别记下2个节点的路径p_path和q_path，时间复杂O(N),空间复杂O(logN) - 只需记父节点=树高
 # 最后倒序遍历p_path和q_path，取出第一个相同的node
 
-# class Solution(object):
+# class Solution_39(object):
 #
 #     def __init__(self):
 #

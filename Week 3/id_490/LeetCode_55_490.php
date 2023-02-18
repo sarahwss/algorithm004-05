@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/jump-game/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * 贪心算法实现，从后往前处理
@@ -23,7 +23,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $nums = [2,3,1,1,4]; // true
 $res = $solution->canJump($nums);
 var_dump($res);

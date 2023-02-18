@@ -38,7 +38,7 @@ wordList = ["hot","dot","dog","lot","log"]
 """
 from typing import List
 import string
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList:return 0
         dist = 1
@@ -62,6 +62,6 @@ class Solution:
                 front,back= back,front
         return 0
 
-print(Solution().ladderLength("hit","cog", ["hot","dot","dog","lot","log","cog"]))
+print(Solution_39().ladderLength("hit","cog", ["hot","dot","dog","lot","log","cog"]))
 
-print(Solution().ladderLength("hit","cog",["hot","dot","dog","lot","log"]))
+print(Solution_39().ladderLength("hit","cog",["hot","dot","dog","lot","log"]))

@@ -1,6 +1,6 @@
 正常购物思路
 收到5记录，收到10 找5（5个个数大于1），收到20 找10或者5（5>3 或者 10>1 && 5>1）
-class Solution {
+class Solution_39 {
     public boolean lemonadeChange(int[] bills) {
         int five = 0, ten = 0;
         for (int bill: bills) {

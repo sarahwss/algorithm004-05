@@ -37,7 +37,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: list) -> int:
         """ 并查集 """
         class UnionFind:
@@ -86,7 +86,7 @@ class Solution:
 
 #leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     M = [[1,1,0],
          [1,1,0],
          [0,0,1]]

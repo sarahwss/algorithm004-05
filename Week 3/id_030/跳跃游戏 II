@@ -2,7 +2,7 @@
 每次跳到最远直到能够条到最后一个位置
 
 //代码看了国际站
-class Solution {
+class Solution_39 {
     public int jump(int[] nums) {     
        int times = 0, start = 0, fast = 0;//初始化跳跃次数，每次跳跃的起始位置，能够跳跃的最远距离
 	   for (int i = 0; i < nums.length - 1; i++) {//循环数组

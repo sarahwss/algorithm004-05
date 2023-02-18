@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         if not board: 
             return False

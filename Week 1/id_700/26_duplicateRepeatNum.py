@@ -10,7 +10,7 @@
 ###  思路 双指针法，运用i,j指针，用i记录非重复的值的下标，返回数组长度i+1, 删除零的类似体型
 
 
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0
         for j in range(len(nums)):

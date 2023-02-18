@@ -2,7 +2,7 @@
 # @des: 递归 二叉树的前序遍历
 
 
-class Solution:
+class Solution_39:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         result = []
         self.helper(root,result)
@@ -19,7 +19,7 @@ class Solution:
 # @author:leacoder
 # @des: 迭代 + 借助栈 二叉树的前序遍历
 
-class Solution:
+class Solution_39:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         result, stack = [], [root]
         while stack:

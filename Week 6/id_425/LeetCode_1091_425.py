@@ -56,7 +56,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         n, m = len(grid), len(grid[0])
         visited = [[0] * m for _ in range(n)]

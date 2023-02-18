@@ -1,6 +1,6 @@
 <?php
 
-class Solution
+class Solution_39
 {
     /**
      * 循环一遍清除零并在末尾追加零

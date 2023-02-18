@@ -38,7 +38,7 @@ class Node:
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         output, queue = [], [root] if root else []
         while queue:

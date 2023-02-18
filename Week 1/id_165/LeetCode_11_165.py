@@ -16,7 +16,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution(object):
+class Solution_39(object):
     def maxArea(self, height):
         """
         :type height: List[int]

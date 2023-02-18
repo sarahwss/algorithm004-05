@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def numIslands(self, grid: List[List[str]]) -> int:
         def dfs(r, c):
             if r < 0 or r >= num_row or c < 0 or c >= num_col or grid[r][c] == "0":

@@ -1,7 +1,7 @@
 #!/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def lengthOfLongestSubstring(s):
@@ -20,4 +20,4 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    print(Solution.lengthOfLongestSubstring("ababcbb"))
+    print(Solution_39.lengthOfLongestSubstring("ababcbb"))

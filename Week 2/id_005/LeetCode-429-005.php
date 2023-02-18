@@ -13,7 +13,7 @@ class Node {
     }
 }
 */
-class Solution
+class Solution_39
 {
     public $level = 0;
     public $values = [];

@@ -50,7 +50,7 @@
 # 首先用递归的方法来解
 # 最早有思路的是栈
 # 
-class Solution:
+class Solution_39:
     def invertTree(self, root: TreeNode) -> TreeNode:
         if root == None:
             return None

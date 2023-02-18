@@ -29,7 +29,7 @@ class Union(object):
         return root
 
 
-class Solution(object):
+class Solution_39(object):
     def findCircleNum(self, M):
         """
         :type M: List[List[int]]

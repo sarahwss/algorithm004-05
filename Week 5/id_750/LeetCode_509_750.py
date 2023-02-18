@@ -25,7 +25,7 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 """
 
 
-class Solution:
+class Solution_39:
     def __init__(self, N: int):
         self.memo = [0 for _ in range(n + 1)]
 
@@ -63,7 +63,7 @@ class Solution:
 if __name__ == '__main__':
     n = 20
     memo = [0 for _ in range(n + 1)]
-    solution = Solution(n)
+    solution = Solution_39(n)
     result = solution.fib3(n)
 
     print(result)

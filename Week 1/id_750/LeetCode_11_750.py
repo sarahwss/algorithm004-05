@@ -12,7 +12,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     # 双指针思想， 从左右同时遍历，直至两个指针遇见，找到合适的结果输出
     def maxArea(self, height: List[int]) -> int:
         maxarea = 0
@@ -29,7 +29,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 

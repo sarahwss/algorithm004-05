@@ -5,7 +5,7 @@ class Node(object):
         self.val = val
         self.children = children
 """
-class Solution(object):
+class Solution_39(object):
     def postorder(self, root):
         """
         :type root: Node

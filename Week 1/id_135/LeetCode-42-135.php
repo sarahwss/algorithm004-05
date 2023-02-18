@@ -1,6 +1,6 @@
 <?php
 
-class Solution {
+class Solution_39 {
 
     /**
      * @param Integer[] $height

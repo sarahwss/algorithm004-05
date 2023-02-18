@@ -30,7 +30,7 @@ n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，�
 """
 
 
-class Solution:
+class Solution_39:
     def totalNQueens(self, n: int) -> int:
         if n < 1: return []
         self.count = 0
@@ -85,4 +85,4 @@ class Solution:
             self.DFS2(n,row+1,cols|p,(pie|p)<<1,(na|p)>>1,pp)
         return []
 
-print(Solution().totalNQueens(6))
+print(Solution_39().totalNQueens(6))

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def climbStairs(self, n):
         """
         :type n: int

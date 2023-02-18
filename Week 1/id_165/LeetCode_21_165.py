@@ -15,7 +15,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-class Solution(object):
+class Solution_39(object):
     def mergeTwoLists(self, l1, l2):
         """
         :type l1: ListNode

@@ -10,7 +10,7 @@
  *     }
  * }
  */
-class Solution
+class Solution_39
 {
     /**
      * 快慢指针

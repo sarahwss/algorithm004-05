@@ -32,7 +32,7 @@
 #
 import re
 # @lc code=start
-class Solution:
+class Solution_39:
     def isPalindrome(self, s):
         #高层次代码
         filtereds = self._filterNoNumberAndStr(s)#过滤其他字符
@@ -48,5 +48,5 @@ class Solution:
         s = s[::-1]
         return s
 # @lc code=end
-# So = Solution() 
+# So = Solution_39()
 # print(So.isPalindrome('A man, a plan, a canal: Panama'))

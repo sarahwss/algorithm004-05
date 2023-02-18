@@ -30,7 +30,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         g.sort()
         s.sort()
@@ -62,7 +62,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     g = [1, 2, 3]
     s = [1, 1]

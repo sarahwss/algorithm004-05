@@ -13,7 +13,7 @@
 # 链接：https://leetcode-cn.com/problems/assign-cookies
 # 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-class Solution:
+class Solution_39:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         count = 0
         g.sort()
@@ -30,7 +30,7 @@ class Solution:
 
 # 根据jalan代码修改,双指针法
 
-class Solution(object):
+class Solution_39(object):
     def findContentChildren(self, g, s):
         count = 0
         g.sort()

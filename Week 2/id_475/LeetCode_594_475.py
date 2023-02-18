@@ -1,6 +1,6 @@
 # 第一遍
 # 递归实现N叉树，方法和二叉的一样，关键是root.children是一个list
-class Solution:
+class Solution_39:
     def postorder(self, root: 'Node') -> List[int]:
         res = []
         def helper(root):

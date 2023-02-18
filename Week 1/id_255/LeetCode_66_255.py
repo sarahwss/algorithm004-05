@@ -1,5 +1,5 @@
 # 66. 加一
-class Solution:
+class Solution_39:
     def plusOne(self, digits):
         """
         :type digits: List[int]

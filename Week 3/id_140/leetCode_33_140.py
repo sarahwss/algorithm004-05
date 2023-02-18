@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def search(self, nums, target):
         start = 0
         end = len(nums) - 1
@@ -20,6 +20,6 @@ class Solution:
                     end = mid - 1
         return -1
 if __name__ == '__main__':
-    s =Solution()
+    s =Solution_39()
     nums = [4,5,6,7,1,2,3]
     print(s.search(nums,3))

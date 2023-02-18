@@ -27,7 +27,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def maxProfit(self, prices: List[int]) -> int:
         profits = 0
         for idx in range(len(prices)):
@@ -39,7 +39,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     param = [1, 2, 3, 4, 5]
 

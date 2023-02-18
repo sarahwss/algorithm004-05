@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def longestValidParentheses(self, s: str) -> int:
         stack = [0]
         longest = 0

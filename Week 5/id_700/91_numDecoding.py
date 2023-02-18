@@ -11,7 +11,7 @@
 
 ###  斐波那契的写法： x,y = y,x+y
 
-class Solution:
+class Solution_39:
     def numDecodings(self,s):
         dp = [0]*len(s)
         if s[0] == "0"
@@ -33,7 +33,7 @@ class Solution:
                 dp[i] += dp[i-2]
         return dp[-1]
 
-class Solution:
+class Solution_39:
     def numDecodings(self, s: str) -> int:
         dp = [0] * len(s)
         # 考虑第一个字母
@@ -61,7 +61,7 @@ class Solution:
 
 ####  看起来很高级的写法...
 
-class Solution:
+class Solution_39:
     def numDecodings(self, s: str) -> int:
         pp, p = 1, int(s[0] != '0')
         for i in range(1, len(s)):

@@ -19,7 +19,7 @@ import collections
 from typing import List
 
 
-class Solution:
+class Solution_39:
     # 方法1：统计数量分类
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         if len(strs) == 0:
@@ -31,7 +31,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     str_array = ["eat", "tea", "tan", "ate", "nat", "bat"]
     result = solution.groupAnagrams(str_array)
     print(result)

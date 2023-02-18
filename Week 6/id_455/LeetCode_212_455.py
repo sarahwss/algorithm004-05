@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         trie = {}
         for word in words:

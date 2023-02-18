@@ -15,13 +15,13 @@ class ListNode:
         self.next = None
 
 
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         pass
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     l1 = [1, 2, 4]
     l2 = [1, 3, 4]
     result = solution.mergeTwoLists(l1, l2)

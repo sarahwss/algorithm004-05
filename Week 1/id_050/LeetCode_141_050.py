@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+class Solution_39(object):
     def hasCycle(self, head):
         """
         :type head: ListNode

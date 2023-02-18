@@ -23,7 +23,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     def climbStairs(self, n: int) -> int:
         if n == 1:
             return 1
@@ -34,7 +34,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     param = 2
 

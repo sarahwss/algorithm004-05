@@ -43,7 +43,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def findLadders(self, beginWord, endWord, wordList):
         from collections import defaultdict
         if endWord not in wordList: return []

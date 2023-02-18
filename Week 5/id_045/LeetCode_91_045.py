@@ -19,7 +19,7 @@ dp[1] :  if s[0] == "0" dp[1] = 0
 
 '''
 
-class Solution:
+class Solution_39:
     def numDecodings(self, s: str) -> int:
         length = len(s)
         if length == 0:

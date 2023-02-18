@@ -37,7 +37,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def search(self, nums: List[int], target: int) -> int:
         
         # 先找到无序的地方，利用二分查找法，只不过每次对比的值是最右侧的值或者最左侧的值

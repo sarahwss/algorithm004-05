@@ -3,7 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         prehead = ListNode(0)
         prev = prehead

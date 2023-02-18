@@ -1,5 +1,5 @@
 # 42. ****************************************接雨水***************************************
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         if not height: return 0
         n = len(height)

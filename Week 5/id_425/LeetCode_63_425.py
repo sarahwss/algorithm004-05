@@ -44,7 +44,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         m = len(obstacleGrid)
         n = len(obstacleGrid[0])

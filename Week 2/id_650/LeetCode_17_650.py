@@ -31,7 +31,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def letterCombinations(self, digits: str) -> List[str]:
         res = []
 

@@ -1,5 +1,5 @@
 # time: Nklogk
-class Solution(object):
+class Solution_39(object):
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]
@@ -12,7 +12,7 @@ class Solution(object):
         return dic.values()
 
 # time: Nk, but how much time does tuple() and ord() take?
-class Solution(object):
+class Solution_39(object):
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]

@@ -8,7 +8,7 @@ class Node:
         self.children = children
 
 
-class Solution:
+class Solution_39:
     def postorder(self, root: 'Node') -> List[int]:
         '''
         使用深度优先遍历

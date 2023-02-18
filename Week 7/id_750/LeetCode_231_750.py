@@ -19,13 +19,13 @@
 """
 
 
-class Solution(object):
+class Solution_39(object):
     def isPowerOfTwo(self, n):
         return n > 0 and n & (n - 1) == 0
 
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     n = 218
     result = s.isPowerOfTwo(n)
 

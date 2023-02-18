@@ -41,7 +41,7 @@ wordList = ["hot","dot","dog","lot","log"]
 """
 from typing import List
 import string
-class Solution:
+class Solution_39:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         if endWord not in wordList:return 0
         wordList = set(wordList)
@@ -74,6 +74,6 @@ class Solution:
 
 
 
-print(Solution().findLadders("hit","cog", ["hot","dot","dog","lot","log","cog"]))
+print(Solution_39().findLadders("hit","cog", ["hot","dot","dog","lot","log","cog"]))
 
-print(Solution().findLadders("hit","cog",["hot","dot","dog","lot","log"]))
+print(Solution_39().findLadders("hit","cog",["hot","dot","dog","lot","log"]))

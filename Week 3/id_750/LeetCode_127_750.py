@@ -36,7 +36,7 @@ from collections import defaultdict
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList or not endWord or not beginWord or not wordList:
             return 0
@@ -62,7 +62,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     begin_word = "hit"
     end_word = "cog"
     word_list = ["hot", "dot", "dog", "lot", "log", "cog"]

@@ -19,7 +19,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def canJump(self, nums: List[int]) -> bool:
         last_idx = len(nums) - 1
         for i in range(len(nums) - 1, -1, -1):
@@ -29,7 +29,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [3, 2, 1, 0, 4]
     result = solution.canJump(nums)

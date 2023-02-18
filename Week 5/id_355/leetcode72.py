@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def minDistance(self, word1, word2):
         m = len(word1)
         n = len(word2)

@@ -19,7 +19,7 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 #TODO
 
-class Solution(object):
+class Solution_39(object):
     def longestValidParentheses(self, s):
         """
         :type s: str

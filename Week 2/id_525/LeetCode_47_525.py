@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         '''
         回溯=DFS+剪枝+状态清除

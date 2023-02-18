@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def minPathSum(self, grid):
         if(not grid):
             return 0
@@ -20,7 +20,7 @@ class Solution:
                 grid[x][y]+=min(grid[x-1][y],grid[x][y-1])
         return grid[-1][-1]
 if __name__ == '__main__':
-	s = Solution()
+	s = Solution_39()
 	grid=[
  			[1,3,1],
 			[1,5,1],

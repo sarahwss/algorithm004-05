@@ -12,7 +12,7 @@
 
 
 #####  思路1 暴力求解，将nums1的数组拷贝出来，nums1设置为空数组，然后循环遍历比较nums1.copy跟nums2的每个元素的大小，小的放进nums1中，
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.

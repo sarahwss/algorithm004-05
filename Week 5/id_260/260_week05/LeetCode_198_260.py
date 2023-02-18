@@ -1,4 +1,4 @@
-# class Solution(object):
+# class Solution_39(object):
 #     def rob(self, nums):
 #         """
 #         :type nums: List[int]
@@ -17,7 +17,7 @@
 #         n = len(nums) - 1
 #         return max(dp[n][0], dp[n][1]) 
 
-class Solution(object):
+class Solution_39(object):
     def rob(self, nums):
         cur, pre = 0, 0
         for num in nums:

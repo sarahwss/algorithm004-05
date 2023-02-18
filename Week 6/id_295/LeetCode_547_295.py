@@ -32,7 +32,7 @@ from typing import List
 
 # 时间复杂度: O(n^3) 访问整个矩阵一次，并查集操作需要最坏 O(n) 时间
 # 空间复杂度: O(n) parent 大小为 n
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         if not M: return 0
 

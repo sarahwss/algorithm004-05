@@ -18,7 +18,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def merge(self, nums1: list, m: int, nums2: list, n: int) -> None:
         """
         比较插入法
@@ -48,7 +48,7 @@ class Solution:
 # leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
 
     nums1 = [0]
     m = 0

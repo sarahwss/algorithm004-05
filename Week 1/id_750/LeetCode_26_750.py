@@ -2,7 +2,7 @@ from typing import List
 
 
 # 26.删除排序数组中的重复项
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         if not nums: return 0
         k = 1
@@ -17,6 +17,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     a = [1, 1, 2]
     print(s.removeDuplicates2(a))

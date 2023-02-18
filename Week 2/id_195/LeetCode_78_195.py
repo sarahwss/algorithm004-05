@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
         n = len(nums)
@@ -10,7 +10,7 @@ class Solution:
         _helper(0, [])
         return res
 
-class Solution:
+class Solution_39:
     def subsets(self, nums):
         res = [[]]
         for i in nums:

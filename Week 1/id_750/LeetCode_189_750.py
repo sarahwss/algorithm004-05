@@ -2,7 +2,7 @@ from typing import List
 
 
 # 189.旋转数组
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -38,7 +38,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     b = [1, 2, 3, 4, 5, 6, 7, 8]
     k = 3
     # s.rotate(b, k)

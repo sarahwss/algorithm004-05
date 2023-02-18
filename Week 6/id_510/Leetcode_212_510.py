@@ -34,7 +34,7 @@ def ii(args):
     pass
 
 
-class Solution:
+class Solution_39:
 
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         trie,res,i_len,j_len,dxy = {},set(),len(board),len(board[0]), ((0, 1), (1, 0), (0, -1), (-1, 0))  # 上 右 下 左  0  90 180  270
@@ -65,7 +65,7 @@ board =[
   ['i','f','l','v']
 ]
 
-print(Solution().findWords(board,words))
+print(Solution_39().findWords(board,words))
 
 
 

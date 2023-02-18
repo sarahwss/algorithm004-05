@@ -1,7 +1,7 @@
 #!/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def decodeString(s):
@@ -22,5 +22,5 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    print(Solution.decodeString("3[ab]2[bc]"))
-    print(Solution.decodeString("30[a2[c]]"))
+    print(Solution_39.decodeString("3[ab]2[bc]"))
+    print(Solution_39.decodeString("30[a2[c]]"))

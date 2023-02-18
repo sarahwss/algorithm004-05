@@ -2,7 +2,7 @@
 # 第一遍
 # DP：自底向上
 # 法一：
-class Solution:
+class Solution_39:
     def uniquePaths(self, m: int, n: int) -> int:
         # 创建二维数组
         opt = [ [0 for _ in range(n)] for _ in range(m)]
@@ -19,7 +19,7 @@ class Solution:
         return opt[m-1][n-1]
 
 # 法二：代码优化 只存储当前行和上一行
-class Solution:
+class Solution_39:
     def uniquePaths(self, m: int, n: int) -> int:
         # 初始化：创建两个一维数组
         pre = [1] * n
@@ -32,7 +32,7 @@ class Solution:
 
 # 法三：在法二的代码上进行改进
 # 可观察到cur[j] = cur[j-1] + pre[j],由于pre初值和cur一样，且每次要更新pre，故可写为cur[j] = cur[j-1] + cur[j]
-class Solution:
+class Solution_39:
     def uniquePaths(self, m: int, n: int) -> int:
         # 初始化：创建两个一维数组
         cur = [1] * n

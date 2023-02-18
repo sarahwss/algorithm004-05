@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         subMap = {}
         for i, n in enumerate(nums):

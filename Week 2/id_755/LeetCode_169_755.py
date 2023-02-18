@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int:
         # iterative method
         counter = collections.Counter(nums)

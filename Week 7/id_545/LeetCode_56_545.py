@@ -1,6 +1,6 @@
 ## 合并区间
 
-# class Solution:
+# class Solution_39:
 #     # 快排
 #     def quickSort(self, arr, begin, end):
 #         def partition(arr, begin, end):
@@ -29,7 +29,7 @@
 #         return result
 
 
-class Solution:
+class Solution_39:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         if not intervals: return
         mergeInter = []

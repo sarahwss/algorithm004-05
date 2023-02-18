@@ -13,7 +13,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         if len(nums) <= 1:
             return False
@@ -43,7 +43,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [2, 5, 5, 15]
     target = 10

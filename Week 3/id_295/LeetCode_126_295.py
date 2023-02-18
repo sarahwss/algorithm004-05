@@ -39,7 +39,7 @@ from collections import defaultdict
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         if endWord not in wordList:
             return []

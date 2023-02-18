@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def trap(self, height) -> int:
         if not height: return 0
         n = len(height)
@@ -14,5 +14,5 @@ class Solution:
 
 if __name__ == '__main__':
     testCase = [0,1,0,2,1,0,1,3,2,1,2,1]
-    solution = Solution()
+    solution = Solution_39()
     print("Contain Water: ", solution.trap(testCase))

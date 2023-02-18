@@ -25,7 +25,7 @@ DP[i][j]  A、 word1 的 i 个字母 与 word2 的 第 j 个字母 相同
                     DP[i-1][j-1]+1 :  word1 word2 都替换一个字符
 
 '''
-class Solution:
+class Solution_39:
     def minDistance(self, word1: str, word2: str) -> int:
         len1 = len(word1)
         len2 = len(word2)

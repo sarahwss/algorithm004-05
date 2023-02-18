@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def solveNQueens(self, n: int) -> List[List[str]]:
 
     # 方法一，超哥在课上给的方法，说实话代码挺简洁，相比LeetCode高票答案，也没太炫技，点赞

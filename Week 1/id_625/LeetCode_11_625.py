@@ -6,7 +6,7 @@
 
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def maxArea(self, height: List[int]) -> int:
         # 枚举法
         water = 0

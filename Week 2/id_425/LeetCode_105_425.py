@@ -51,7 +51,7 @@
 # 终止条件判断的变量必与函数参数有关，参数改变使得终止条件成立。
 # 参数与函数主体的处理不一定有关，若有关则可写独立递归。若无关则需要静态变量\全局变量辅助执行。
 # 主题需要构建返回对象，改变递归参数。
-class Solution:
+class Solution_39:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
         nonlocal pre
         def helper(in_left = 0,in_right = len(inorder)):

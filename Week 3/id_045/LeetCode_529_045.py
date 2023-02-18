@@ -12,7 +12,7 @@ board[row][col]四周有雷
 
 '''
 
-class Solution:
+class Solution_39:
      # 便于 上下左右扩散
     dx = [-1, 1, 0, 0,-1,-1,1,1]
     dy = [ 0, 0,-1, 1,-1,1,-1,1]

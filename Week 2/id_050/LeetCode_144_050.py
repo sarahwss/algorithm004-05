@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+class Solution_39(object):
     def preorderTraversal(self, root):
         """
         :type root: TreeNode

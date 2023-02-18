@@ -16,7 +16,7 @@ class UnionSet:
         p1, p2 = self.find(i), self.find(j)
         self.parent[p1] = p2
 
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         n = len(M)
         u = UnionSet(n)

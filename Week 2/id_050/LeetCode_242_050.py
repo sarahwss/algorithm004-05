@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def isAnagram(self, s, t):
         """
         :type s: str

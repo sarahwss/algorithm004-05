@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def inorderTraversal(self, root):
         if not root: return []
         self.res = []

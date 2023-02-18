@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def countBits(self, num: int) -> List[int]:
         target = [0]
         n = len(target)

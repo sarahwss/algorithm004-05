@@ -64,7 +64,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def slidingPuzzle(self, board: List[List[int]]) -> int:
         board = board[0]+board[1]  # 把board连起来变一维
         moves = [(1, 3), (0, 2, 4), (1, 5), (0, 4), (1, 3, 5), (2, 4)]  # 每个位置的0可以交换的位置

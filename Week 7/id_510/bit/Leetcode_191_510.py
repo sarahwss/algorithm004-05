@@ -32,7 +32,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def hammingWeight(self, n: int) -> int:
         ans, MASK = 0, 1
         for i in range(32):
@@ -42,5 +42,5 @@ class Solution:
         return ans
 
 
-print(Solution().hammingWeight(3))
+print(Solution_39().hammingWeight(3))
 

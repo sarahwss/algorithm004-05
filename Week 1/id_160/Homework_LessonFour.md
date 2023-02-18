@@ -79,7 +79,7 @@
 
 
 ```
-    class Solution {
+    class Solution_39 {
     public:
         int trap(vector<int>& height) {
             int cnt = height.size();

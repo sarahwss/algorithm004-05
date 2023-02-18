@@ -1,6 +1,6 @@
 ## 删除排序数组中的重复项
 # 方法： 快慢指针  时间：O(n)  空间：O(1)
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         s = 0
         for f in range(0, len(nums)):

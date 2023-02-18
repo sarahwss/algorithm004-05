@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def minPathSum(self, grid):
         m = len(grid)
         n = len(grid[0])

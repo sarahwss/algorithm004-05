@@ -21,7 +21,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
@@ -51,5 +51,5 @@ if __name__ == '__main__':
     s = "anagram"
     t = "nagaram"
 
-    solition = Solution()
+    solition = Solution_39()
     print(solition.isAnagram(s, t))

@@ -1,6 +1,6 @@
 ## 两数之和
 # 方法一： 暴力法 时间：O(n^2) 空间：O(1)
-# class Solution:
+# class Solution_39:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
 #         for i in range(0, len(nums)-1):
 #             for j in range(i+1, len(nums)):
@@ -10,7 +10,7 @@
 #######################################################################
 
 # 方法二： hash Map 时间：O(n) 空间：O(n)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dct = dict()
         for i in range(0, len(nums)):

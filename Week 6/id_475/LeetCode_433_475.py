@@ -1,6 +1,6 @@
 # 最小基因变化
 # 法一：单项BFS
-class Solution:
+class Solution_39:
     def minMutation(self, start: str, end: str, bank: List[str]) -> int:
         # 广度优先搜索
         bank = set(bank)  # 转换为set, in判断只需O(1)时间
@@ -23,7 +23,7 @@ class Solution:
         return -1  # 队列空了说明不可达
 
 # 法二：双向BFS
-class Solution:
+class Solution_39:
     def minMutation(self, start: str, end: str, bank: List[str]) -> int:
         bank = set(bank)
         if end not in bank: # end不在基因库中，不可达

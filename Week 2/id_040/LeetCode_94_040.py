@@ -24,7 +24,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> list:
         # 中序遍历 递归顺序 左-根-右
         rdata = []
@@ -44,5 +44,5 @@ if __name__ == '__main__':
     root.right = t2
     t2.left = t3
 
-    s = Solution()
+    s = Solution_39()
     print(s.inorderTraversal(root))

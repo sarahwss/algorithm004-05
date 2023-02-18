@@ -26,7 +26,7 @@
 
 from typing import List
 
-class Solution:
+class Solution_39:
     def maxProfit(self, k: int, prices: List[int]) -> int:
         len_ = len(prices)
         if len_ < 2:
@@ -52,5 +52,5 @@ class Solution:
         return dp[-1][-1][0]
 
 
-print(Solution().maxProfit(2, [2, 4, 1]))
-print(Solution().maxProfit(2, [3, 2, 6, 5, 0, 3]))
+print(Solution_39().maxProfit(2, [2, 4, 1]))
+print(Solution_39().maxProfit(2, [3, 2, 6, 5, 0, 3]))

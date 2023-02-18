@@ -18,7 +18,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def longestValidParentheses1(self, s: str) -> int:
         # 暴力法  超时
         def isValidParenthese(s :str) -> bool:
@@ -62,5 +62,5 @@ class Solution:
 #leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     print(s.longestValidParentheses2(")(()())"))

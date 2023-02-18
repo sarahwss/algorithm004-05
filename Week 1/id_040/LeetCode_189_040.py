@@ -30,7 +30,7 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 
 # 第一遍 2019年10月16日
-class Solution:
+class Solution_39:
     def rotate1(self, nums: list, k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -74,7 +74,7 @@ class Solution:
 # leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     nums = [1, 2, 3, 4, 5, 6, 7]
     print(s.rotate2(nums, 1))
     print(nums)

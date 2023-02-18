@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def relativeSortArray(self, arr1, arr2):
         """
         :type arr1: List[int]

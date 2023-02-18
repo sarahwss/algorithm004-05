@@ -14,7 +14,7 @@
 '''
 
 from collections import defaultdict
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
 
         if endWord not in wordList or not endWord or not beginWord or not wordList:

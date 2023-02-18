@@ -23,7 +23,7 @@ inorder 中 3 的左侧 [9] 是树的左子树，右侧 [15, 20, 7] 构成了树
 3的位置+1为根节点左子树节点个数，可以通过 preorder 找到根节点 左右子树具体有哪些节点
 
 '''
-class Solution:
+class Solution_39:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
         if len(preorder) == 0:
             return None

@@ -1,6 +1,6 @@
 
 # 49. 字母异位词分组
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # ans = collections.defaultdict(list)
         # for s in strs:

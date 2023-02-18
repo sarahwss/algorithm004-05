@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/friend-circles/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * 第一种解法：使用并查集

@@ -39,7 +39,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     # 时间复杂度 O(n + k) n, k 为 commands 和 obstacles 长度
     # 空间复杂度 O(k) obstacles_set 的空间
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:

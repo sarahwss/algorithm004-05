@@ -29,7 +29,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def generateParenthesis(self, n: int) -> List[str]:
         ret =[]
         s='('

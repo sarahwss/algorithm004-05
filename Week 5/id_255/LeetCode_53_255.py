@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def maxSubArray(self, nums: List[int]) -> int:
         size = len(nums)
         if size == 0:

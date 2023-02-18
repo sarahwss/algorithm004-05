@@ -1,6 +1,6 @@
 from typing import List
 
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         j = 0
         for i in range(len(nums)):

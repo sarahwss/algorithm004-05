@@ -12,7 +12,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     # solution 1 recursively
     # def inorderTraversal(self, root: TreeNode) -> List[int]:
     #     res=[]

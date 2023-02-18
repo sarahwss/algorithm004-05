@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def canJump(self, nums: List[int]) -> bool:
         if nums is None:
             return False

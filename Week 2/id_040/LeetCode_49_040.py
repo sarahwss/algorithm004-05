@@ -21,7 +21,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs: list) -> list:
         s_map = {}
         for i in range(len(strs)):
@@ -38,5 +38,5 @@ class Solution:
 #leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
     l = ["eat", "tea", "tan", "ate", "nat", "bat"]
-    s= Solution()
+    s= Solution_39()
     print(s.groupAnagrams(l))

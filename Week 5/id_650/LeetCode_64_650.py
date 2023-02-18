@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def minPathSum(self, grid: List[List[int]]) -> int:
         dp = grid
         # 初始化边界或者在遍历时判断边界

@@ -14,7 +14,7 @@
 # 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ####   思路1,暴力求解
-class Solution:
+class Solution_39:
     def rotate(self,nums:List[int],k:int)->None:
         for i in range(k):
             tmp = nums[-1]  #######  将数组最后一个数值先暂存起来，以免丢失
@@ -23,7 +23,7 @@ class Solution:
             nums[0] = tmp
 
 ###正确写法
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         for i in range(k):
             tmp = nums[-1]
@@ -34,7 +34,7 @@ class Solution:
 
 
 ####  环状法 ######  这个解法其实还没弄懂，先将别人的代码copy过来，留存学习...
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         size = len(nums)
         k %= size

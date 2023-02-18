@@ -5,7 +5,7 @@
 #         self.next = None
 
 # 迭代法：类比leetcode88题合并两个有序数组，方法相同，每次选两个链表头结点最小，放入新的链表中
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = cur = ListNode(0)
         while l1 and l2:

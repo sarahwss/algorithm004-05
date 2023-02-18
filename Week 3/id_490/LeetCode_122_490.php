@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * 第一种解法：峰谷法
@@ -47,7 +47,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $prices = [7,1,5,3,6,4]; // 7
 $index = $solution->maxProfit2($prices);
 var_dump($index);

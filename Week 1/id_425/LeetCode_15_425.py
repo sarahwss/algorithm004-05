@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def threeSum(self, nums) :
         nums.sort()
         returnList =[]
@@ -25,7 +25,7 @@ class Solution:
                     while j > i and nums[j]==nums[j+1]: j -=1
         return returnList
 if __name__ == "__main__":
-    s = Solution()
+    s = Solution_39()
     nums = [-1,0,1,2,-1,-4]
     List = s.threeSum(nums)
     print('结果',List)

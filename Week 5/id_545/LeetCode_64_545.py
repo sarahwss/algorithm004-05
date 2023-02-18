@@ -1,6 +1,6 @@
 ## 最小路径和
 
-class Solution:
+class Solution_39:
     def minPathSum(self, grid: List[List[int]]) -> int:
         for i in range(len(grid)):
             for j in range(len(grid[i])):

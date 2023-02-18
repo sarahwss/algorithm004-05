@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def robotSim(self, commands, obstacles):
         """
         :type commands: List[int]

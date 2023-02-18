@@ -27,7 +27,7 @@ class TreeNode(object):
         self.right = None
 
 
-class Solution(object):
+class Solution_39(object):
 
     def buildTreeNode(self, preorder, inorder):
         if not preorder:

@@ -1,6 +1,6 @@
 # 第一遍
 # 不存储中间变量，每次更新三个值
-class Solution(object):
+class Solution_39(object):
     def climbStairs(self, n):
         if n <= 2:
             return n

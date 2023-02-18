@@ -1,5 +1,5 @@
 ## 212. 单词搜索II
-class Solution(object):
+class Solution_39(object):
     def __init__(self):
         self.root = {}
         self.result = set()

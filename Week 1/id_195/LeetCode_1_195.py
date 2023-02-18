@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
 
     # 两遍哈希表解法 O(n)
     def twoSum_1(self, nums, target):
@@ -29,5 +29,5 @@ class Solution:
 if __name__ == '__main__':
     testCase = [2, 7, 11, 15]
     target = 9
-    solution = Solution()
+    solution = Solution_39()
     print("correct:", [0, 1], "\noutput:", solution.twoSum_3(testCase, target))

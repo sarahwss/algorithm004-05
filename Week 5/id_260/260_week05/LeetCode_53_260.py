@@ -1,4 +1,4 @@
-# class Solution(object):
+# class Solution_39(object):
 #     def maxSubArray(self, nums):
 #         """
 #         :type nums: List[int]
@@ -18,7 +18,7 @@
 #         return max(dp)
 
 
-class Solution:
+class Solution_39:
     def maxSubArray(self, nums):
         size = len(nums)
         if size == 0:

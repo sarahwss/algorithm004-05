@@ -1,6 +1,6 @@
 ## 36. 有效的数独
 
-class Solution:
+class Solution_39:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         block = collections.defaultdict(list)
         for i in range(len(board)):

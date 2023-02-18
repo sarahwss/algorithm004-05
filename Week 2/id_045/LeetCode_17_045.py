@@ -7,7 +7,7 @@ digits的每个字符又有多种情况（多个字母需要处理）
 递归终止条件就是 digits字符串中的每个字符 已处理结束
 """
 
-class Solution:
+class Solution_39:
     phone = {'2': ['a', 'b', 'c'],
                  '3': ['d', 'e', 'f'],
                  '4': ['g', 'h', 'i'],
@@ -50,7 +50,7 @@ class Solution:
 digits字符串中num字符处理结束（phone[num] 中每个字母处理完成）更新现有结果
 """
 
-class Solution:
+class Solution_39:
     phone = {'2': ['a', 'b', 'c'],
                  '3': ['d', 'e', 'f'],
                  '4': ['g', 'h', 'i'],

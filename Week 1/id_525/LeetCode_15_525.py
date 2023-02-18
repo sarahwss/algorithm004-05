@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         res = []

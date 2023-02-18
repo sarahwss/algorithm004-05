@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def letterCombinations(self, digits: str) -> List[str]:
         if len(digits) == 0:
             return []

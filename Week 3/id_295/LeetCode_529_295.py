@@ -65,7 +65,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
         if not board:
             return []

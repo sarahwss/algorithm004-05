@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         g.sort()
         s.sort()

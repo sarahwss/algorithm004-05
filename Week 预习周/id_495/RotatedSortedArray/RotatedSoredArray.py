@@ -1,7 +1,7 @@
 #!/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def search(nums, target):
@@ -29,4 +29,4 @@ class Solution(object):
         return False
 
 if __name__ == '__main__':
-    print(Solution.search([13,24,0,52,33,66],0))
+    print(Solution_39.search([13,24,0,52,33,66],0))

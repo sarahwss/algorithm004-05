@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def combine(self, n: int, k: int) -> List[List[int]]:
         if k <= 0 or n < k:
             return []

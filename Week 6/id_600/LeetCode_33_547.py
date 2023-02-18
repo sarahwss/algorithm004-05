@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def findCircleNum(self, M):
         parent = [-1] * len(M)
 

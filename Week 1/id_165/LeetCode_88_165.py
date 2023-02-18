@@ -18,7 +18,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution(object):
+class Solution_39(object):
     def merge(self, nums1, m, nums2, n):
         """
         :type nums1: List[int]

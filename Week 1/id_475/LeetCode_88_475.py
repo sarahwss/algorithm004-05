@@ -1,5 +1,5 @@
 # 法一：合并后排序,时间复杂度O((n+m)log(n+m))，并未利用数组有序的特点
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
@@ -9,7 +9,7 @@ class Solution:
         return nums1.sort()
 
 # 法二：双指针法：p1和p2得到每一步最小值，i记录修改nums1元素位置，修改为最小值，时间复杂度O(n+m)
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.

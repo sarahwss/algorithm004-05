@@ -7,7 +7,7 @@
  * }
  */
 
-class Solution{
+class Solution_39{
     public function lowestCommonAncestor($root, $p, $q)
     {
         if (!$root || $root === $p || $root === $q) return $root;

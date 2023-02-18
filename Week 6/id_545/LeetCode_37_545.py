@@ -1,5 +1,5 @@
 ## 37. 解数独
-class Solution:
+class Solution_39:
     def __init__(self):
         self.empty = []
         self.row = [set(range(1,10)) for _ in range(9)]

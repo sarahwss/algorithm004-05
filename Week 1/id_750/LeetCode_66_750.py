@@ -19,7 +19,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def plusOne(self, digits: List[int]) -> List[int]:
         for i in range(len(digits)):
             digits[i] += 1
@@ -31,7 +31,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     digits = [2, 9, 9]
     result = solution.plusOne(digits)
     print(result)

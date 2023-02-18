@@ -7,7 +7,7 @@
 #         self.next = None
 
 
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy_head = ListNode(-1)
         curr_pointer = dummy_head

@@ -1,7 +1,7 @@
 #!/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution_39(object):
 
     """
     按奇偶校验排序数组
@@ -23,4 +23,4 @@ class Solution(object):
         return A
 
 if __name__ == '__main__':
-    print(Solution.sortArrayByParity([1,2,3,4,5,6]))
+    print(Solution_39.sortArrayByParity([1,2,3,4,5,6]))

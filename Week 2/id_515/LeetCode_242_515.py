@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t): return False
 

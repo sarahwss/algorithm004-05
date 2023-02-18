@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/search-a-2d-matrix/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * 标准二分查找，将二维数组转换成一维
@@ -34,7 +34,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $matrix = [
   [1,   3,  5,  7],
   [10, 11, 16, 20],

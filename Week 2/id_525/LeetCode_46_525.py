@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def permute(self, nums: List[int]) -> List[List[int]]:
         if not nums: return []
         # 使用一个数组记录当前值是否被使用过

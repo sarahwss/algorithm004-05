@@ -40,7 +40,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def maxDepth(self, root: TreeNode) -> int:
         depth = 1
         return (self.numDepth(root,depth))

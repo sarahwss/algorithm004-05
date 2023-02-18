@@ -21,7 +21,7 @@ board =
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
 from typing import List
-class Solution:
+class Solution_39:
     def exist(self, board: List[List[str]], word: str) -> bool:
         visiter,visiter1,dxy,i_len,j_len,w_len = set(),set(),((0,1),(1,0),(0,-1),(-1,0)),len(board),len(board[0]),len(word)-1
         def dfs(i,j,board,word,index,visiter): # word index 可以转化成字典树
@@ -68,4 +68,4 @@ board =[
   ['A','D','E','E']
 ]
 
-print(Solution().exist1(board,"ABCCE"))
+print(Solution_39().exist1(board,"ABCCE"))

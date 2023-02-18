@@ -5,7 +5,7 @@ class Node:
         self.val = val
         self.children = children
 """
-class Solution:
+class Solution_39:
     def postorder(self, root: 'Node') -> List[int]:
         res_lst = []
         def post_traversal(possible_nodes):

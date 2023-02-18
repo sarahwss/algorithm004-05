@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int:
 
         def majority_element_rec(lo, hi):

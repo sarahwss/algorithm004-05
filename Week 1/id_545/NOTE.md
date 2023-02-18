@@ -37,7 +37,7 @@
 第三步： 遍历完后， `s+1` 就是移除重复数组的新长度， `return s+1` 即可。  
 
 ``` python
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         s = 0
         for f in range(0, len(nums)):
@@ -60,7 +60,7 @@ class Solution:
 第四步： 重复以上步骤；
 
 ``` python
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums) - 1
         j = 0
@@ -82,7 +82,7 @@ class Solution:
 第三步： 遍历对调后的数组赋值给nums；
 
 ``` python
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         split_index = len(nums) - k
         front_arr = nums[:split_index]
@@ -101,7 +101,7 @@ class Solution:
 第四步： 反转后面剩下的元素；  
 
 ``` python
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         k %= len(nums)
         self.reversal(nums, 0, len(nums)-1)
@@ -124,7 +124,7 @@ class Solution:
 第四步： prev.next 指向那个没有遍历完的链表的当前节点， 返回preHead.next；  
 
 ``` python
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         preHead = ListNode(-1)
         prev = preHead
@@ -146,7 +146,7 @@ class Solution:
 **递归法 时间：O(m+n) 空间：O(m+n)**
 递归不太理解啊~~~
 ```python
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         if l1 is None:
             return l2
@@ -165,7 +165,7 @@ class Solution:
 **方法一： 暴力法 时间：O(n^2) 空间：O(1)**
 
 ``` python
- class Solution:
+ class Solution_39:
      def twoSum(self, nums: List[int], target: int) -> List[int]:
          for i in range(0, len(nums)-1):
              for j in range(i+1, len(nums)):
@@ -176,7 +176,7 @@ class Solution:
 **方法二： hashMap 时间：O(n) 空间：O(n)**
 
 ``` python
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dct = dict()
         for i in range(0, len(nums)):
@@ -192,7 +192,7 @@ class Solution:
 **方法一: 统计法 时间：O(n) 空间：O(1)**
 
 ``` python
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         n = 0
         for i in range(0, len(nums)):
@@ -208,7 +208,7 @@ class Solution:
 **方法二： 快慢指针法 时间：O(n) 空间：O(1)**
 
 ``` python
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         s = 0
         for f in range(0, len(nums)):
@@ -222,7 +222,7 @@ class Solution:
 **方法一： 数组转数字 时间：O(n) 空间：O(n)** 
 
 ``` python
-class Solution:
+class Solution_39:
     def plusOne(self, digits: List[int]) -> List[int]:
         length = len(digits)
         sum = 0
@@ -235,7 +235,7 @@ class Solution:
 --------------------------------------------------------------------
 **方法二： 使用内置函数 时间：O(n) 空间：O(n)**
 ``` python
-class Solution:
+class Solution_39:
     def plusOne(self, digits: List[int]) -> List[int]:
         sum = int(''.join(list(map(str, digits)))) + 1
         return list( map(int, list(str(sum))) )
@@ -243,7 +243,7 @@ class Solution:
 --------------------------------------------------------------------
 **方法三： 冒泡法 时间：O(n) 空间：O(1)**
 ``` python
-class Solution:
+class Solution_39:
     def plusOne(self, digits: List[int]) -> List[int]:
         i = len(digits)
         digits[i-1] += 1
@@ -262,7 +262,7 @@ class Solution:
 ##### LeetCode_88 合并两个有序数组 <a id='LeetCode_88'></a>  
 **方法一：合并后排序 时间：O( (m+n)log(m+n) ) 空间： O(1)**
 ``` python
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         i = 0
         while i < n:
@@ -273,7 +273,7 @@ class Solution:
 --------------------------------------------------------------------------------------
 **方法二： 使用切片 时间：O( (m+n)log(m+n) ) 空间： O(1)**
 ``` python
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums1[m:] = nums2[:n]
         nums1.sort()
@@ -281,7 +281,7 @@ class Solution:
 --------------------------------------------------------------------------------------
 **方法三： 双指针 前往后  时间：O(n + m)O(n+m) 空间：O(m)**
 ``` python
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         arr = nums1[:m]
         nums1[:] = []
@@ -305,7 +305,7 @@ class Solution:
 **栈 时间：O(n) 空间： O(n)**
 
 ``` python
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         stack = []
         area = 0

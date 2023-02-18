@@ -31,7 +31,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         
         intervals = sorted(intervals)

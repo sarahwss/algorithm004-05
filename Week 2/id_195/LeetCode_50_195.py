@@ -1,5 +1,5 @@
 
-class Solution:
+class Solution_39:
     def myPow(self, x: float, n: int) -> float:
         pow = 1
         if n < 0:
@@ -14,7 +14,7 @@ class Solution:
                 pow = pow * x
             return pow
 
-class Solution:
+class Solution_39:
     def fastPow(self, x: float, n: int) -> float:
         if n == 0:
             return 1.0
@@ -29,7 +29,7 @@ class Solution:
             n = -n
         return self.fastPow(x, n)
 
-class Solution:
+class Solution_39:
     def myPow(self, x: float, n: int) -> float:
         judge = True
         if n < 0:

@@ -1,6 +1,6 @@
 # 括号生成
 # 法一：递归
-class Solution:
+class Solution_39:
     def generateParenthesis(self, n):
         res = []
         def helper(left, right, s):
@@ -24,7 +24,7 @@ class Solution:
 # c.DP方程：dp[i] = "(" + dp[j] + ")" + dp[i-j-1], j = 0, 1, ..., i-1 
 from typing import List
 
-class Solution:
+class Solution_39:
     def generateParenthesis(self, n: int) -> List[str]:
         if n == 0:
             return []

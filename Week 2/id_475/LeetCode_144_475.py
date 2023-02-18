@@ -6,7 +6,7 @@
 #         self.right = None
 
 # 第一遍：递归实现前序遍历
-class Solution:
+class Solution_39:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
         def helper(root):

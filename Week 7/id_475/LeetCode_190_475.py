@@ -1,6 +1,6 @@
 # 颠倒二进制位
 # 第一遍
-class Solution:
+class Solution_39:
     # @param n, an integer
     # @return an integer
     def reverseBits(self, n):

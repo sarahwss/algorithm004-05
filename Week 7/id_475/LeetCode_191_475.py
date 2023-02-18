@@ -1,7 +1,7 @@
 # 位1的个数
 # 第一遍
 # 法一：for loop:0 -->32
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int
@@ -14,7 +14,7 @@ class Solution(object):
                 count += 1
         return count  
 # 法一优化代码
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int
@@ -23,7 +23,7 @@ class Solution(object):
         return bin(n).count('1')
 
 # 法二：%2 /2
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int
@@ -38,7 +38,7 @@ class Solution(object):
         return count
 
 # 法三：&1 x = x >> 1
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int

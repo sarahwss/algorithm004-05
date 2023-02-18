@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/word-ladder/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * @param String $beginWord

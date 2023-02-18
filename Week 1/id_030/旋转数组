@@ -1,6 +1,6 @@
 1.暴力解法：循环K次每次移动一位 嵌套循环
 2.使用双指针起始位置为0和K-1，循环前移直到k-1==0 i
-class Solution {
+class Solution_39 {
     public void rotate(int[] nums, int k) {
             
                  while(k>0){
@@ -31,7 +31,7 @@ class Solution {
 反转前 k 个数字后          : 5 6 7 4 3 2 1
 反转后 n-k 个数字后        : 5 6 7 1 2 3 4 --> 结果
 Java
-public class Solution {
+public class Solution_39 {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
         reverse(nums, 0, nums.length - 1);

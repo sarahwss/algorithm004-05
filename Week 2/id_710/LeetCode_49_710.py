@@ -15,7 +15,7 @@
 """
 import collections
 
-class Solution(object):
+class Solution_39(object):
     def groupAnagrams0(self, strs):
         """
         :type strs: List[str]
@@ -59,7 +59,7 @@ class Solution(object):
 def main():
     list_s = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
-    s = Solution()
+    s = Solution_39()
     
     all_anagrams0 = s.groupAnagrams0(list_s)
 

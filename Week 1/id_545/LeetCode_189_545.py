@@ -1,6 +1,6 @@
 ## 旋转数组
 # 方法一： 暴力法， 循环嵌套   时间：O(k*n) 空间：O(1)
-# class Solution:
+# class Solution_39:
 #     def rotate(self, nums: List[int], k: int) -> None:
 #         n = len(nums) - 1
 #         j = 0
@@ -16,7 +16,7 @@
 #################################################################
 
 #  方法二：拆分对调  时间：O(n) 空间：O(n)
-# class Solution:
+# class Solution_39:
 #     def rotate(self, nums: List[int], k: int) -> None:
 #         split_index = len(nums) - k
 #         front_arr = nums[:split_index]
@@ -27,7 +27,7 @@
 #################################################################
 
 # 方法三： 反转法 时间：O(n) 空间：O(1)
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         k %= len(nums)
         self.reversal(nums, 0, len(nums)-1)

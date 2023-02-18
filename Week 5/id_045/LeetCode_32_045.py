@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  动态规划 最长有效括号
 
-class Solution:
+class Solution_39:
     def longestValidParentheses(self, s: str) -> int:
         maxans = 0
         dp = [0] * len(s)

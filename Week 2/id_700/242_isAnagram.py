@@ -26,7 +26,7 @@
 #####   思路：2. hash, 在Python中是dict 实现吧？（1）统计每个字符实现的频次，判断两个dict是否相等，（2）加一减一，判断最后的dict 是否empty
 #####                                        （3） ASCII 存储 ——  这个不熟悉....
 
-class Solution:
+class Solution_39:
     def isAnagram(self, s, t):
         dic1, dic2 = {}, {}
         for item in s:

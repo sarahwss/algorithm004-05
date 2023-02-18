@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  合并后排序  合并两个有序数组
 # 时间复杂度 : O((n + m)log(n + m))
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums1[:] = sorted(nums1[:m] + nums2)
 
@@ -11,7 +11,7 @@ class Solution:
 # @des:  双指针 从前往后 合并两个有序数组
 # 时间复杂度 : O(n + m)
 
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums1_copy = nums1[:m] 
         nums1[:] = []
@@ -37,7 +37,7 @@ class Solution:
 # @des:  三指针 从后往前 合并两个有序数组
 # 时间复杂度 : O(n + m)
 
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         # 双指针 从后往前
         p1 = m-1

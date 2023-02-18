@@ -20,7 +20,7 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 
-class Solution(object):
+class Solution_39(object):
     def findMin(self, nums):
         """
         :type nums: List[int]

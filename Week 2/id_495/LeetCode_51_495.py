@@ -1,6 +1,6 @@
 #!/anaconda3/bin/python
 
-class Solution(object):
+class Solution_39(object):
     """
     N皇后
     """
@@ -19,4 +19,4 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    print(Solution().solveNQueens(4));
+    print(Solution_39().solveNQueens(4));

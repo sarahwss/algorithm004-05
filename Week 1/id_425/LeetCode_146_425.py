@@ -96,10 +96,10 @@ class LRUCache:
 # 出现错误，未解决-.-
 # Line 45: KeyError: 1
 # KeyError: 1
-# Line 45 in put (Solution.py)
-# Line 74 in __helper_select_method__ (Solution.py)
-# Line 106 in _driver (Solution.py)
-# Line 116 in <module> (Solution.py)
+# Line 45 in put (Solution_39.py)
+# Line 74 in __helper_select_method__ (Solution_39.py)
+# Line 106 in _driver (Solution_39.py)
+# Line 116 in <module> (Solution_39.py)
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)

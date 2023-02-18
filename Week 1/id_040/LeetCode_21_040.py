@@ -16,7 +16,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         """
         直接比较插入
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     m1.next = m2
     m2.next = m3
 
-    s = Solution()
+    s = Solution_39()
     mn = s.mergeTwoLists(n1, m2)
 
     while mn:

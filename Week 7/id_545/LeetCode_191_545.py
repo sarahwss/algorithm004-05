@@ -1,6 +1,6 @@
 ## 191. 位1的个数
 
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int

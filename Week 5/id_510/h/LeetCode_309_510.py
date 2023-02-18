@@ -20,7 +20,7 @@
  #/
 
 from typing import List
-class Solution:
+class Solution_39:
     def maxProfit(self, prices: List[int]) -> int:
         len_ = len(prices)
         if len_ < 2:
@@ -37,5 +37,5 @@ class Solution:
         return dp[-1][0]
 
 
-print(Solution().maxProfit([1,2,3,0,2]))
-print(Solution().maxProfit([7,1,5,3,6,4]))
+print(Solution_39().maxProfit([1,2,3,0,2]))
+print(Solution_39().maxProfit([7,1,5,3,6,4]))

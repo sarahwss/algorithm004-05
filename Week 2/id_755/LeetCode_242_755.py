@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         # solution 1: return sorted(s) == sorted(t), time complexity : O(nlogn)
         # return sorted(s) == sorted(t)

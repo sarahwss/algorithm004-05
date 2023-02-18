@@ -1,6 +1,6 @@
 ## 接雨水
 # 栈 时间：O(n) 空间： O(n)
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         stack = []
         area = 0

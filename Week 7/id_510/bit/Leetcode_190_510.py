@@ -24,7 +24,7 @@
 链接：https://leetcode-cn.com/problems/reverse-bits
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
-class Solution:
+class Solution_39:
     # @param n, an integer
     # @return an integer
     def reverseBits(self, n):
@@ -38,8 +38,8 @@ class Solution:
             MASK <<= 1
         #print(format(ans, 'b').ljust(32, '0'))
         return ans
-print(Solution().reverseBits(4294967293))
-print(Solution().reverseBits(43261596))
+print(Solution_39().reverseBits(4294967293))
+print(Solution_39().reverseBits(43261596))
 
 
 #00111001011110000010100101000000

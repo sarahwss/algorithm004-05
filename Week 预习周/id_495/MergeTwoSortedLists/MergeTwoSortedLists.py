@@ -3,7 +3,7 @@
 
 import collections
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def lengthOfLongestSubstring(s):
@@ -31,5 +31,5 @@ class Solution(object):
         return ans
 
 if __name__ == '__main__':
-    print(Solution.lengthOfLongestSubstring("aaaaaa"))
-    print(Solution._lengthOfLongestSubstring("asdfasdfx"))
+    print(Solution_39.lengthOfLongestSubstring("aaaaaa"))
+    print(Solution_39._lengthOfLongestSubstring("asdfasdfx"))

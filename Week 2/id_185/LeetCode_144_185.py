@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         res, stack = [], [root]
         

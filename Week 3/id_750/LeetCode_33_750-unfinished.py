@@ -21,7 +21,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def search(self, nums: List[int], target: int) -> int:
         l, r = 0, len(nums) - 1
         while l < r:
@@ -34,7 +34,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [4, 5, 6, 7, 0, 1, 2]
     target = 4

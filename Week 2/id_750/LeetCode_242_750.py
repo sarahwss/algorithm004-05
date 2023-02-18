@@ -17,7 +17,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     # 方法1：把字符串转换成list，利用list中sort函数排序后进行比较
     # 观察国际大佬代码发现一行代码就能实现 return sorted(s) == sorted(t)，膜拜一下。
     def isAnagram(self, s: str, t: str) -> bool:
@@ -57,7 +57,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     s = "anagram"
     t = "nagaram"
     # result = solution.isAnagram(s, t)

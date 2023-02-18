@@ -13,7 +13,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         i = 0
         for j in range(len(nums)):
@@ -27,7 +27,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [0, 1, 0, 3, 12]
 

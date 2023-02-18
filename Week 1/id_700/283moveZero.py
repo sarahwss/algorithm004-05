@@ -16,7 +16,7 @@
 ######  思路：双指针法，用i记录非零值的下标，遍历数组，当遇到非零的时候，以i做记录，并将i增加1
 ######        当出现下标i,j不一致时，表明数组中已经出现零的，而这个零值需要被替换到j上，此时将nums[j]=0，
 
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.

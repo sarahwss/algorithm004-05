@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def permute(self, nums: List[int]) -> List[List[int]]:
         n=len(nums)
         output=[]

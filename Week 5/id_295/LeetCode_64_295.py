@@ -20,7 +20,7 @@ from typing import List
 
 
 # 时间复杂度 O(mn)
-class Solution:
+class Solution_39:
     def minPathSum(self, grid: List[List[int]]) -> int:
         m, n = len(grid), len(grid[0])
         for i in range(1, m):

@@ -15,7 +15,7 @@
 
 #
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def moveZeroes1(self, nums: list) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -46,7 +46,7 @@ class Solution:
 # leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     nums = [0, 1, 0, 2, 3, 0, 4]
     print(nums)
     s.moveZeroes2(nums)

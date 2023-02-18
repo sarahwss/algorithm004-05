@@ -2,7 +2,7 @@
 # 我的思路：hash 先判断1.字母次数是否一样：不一样false；
 #                                  一样进入2.基本情况1）s="",t="";2)s="a",t="a";3)一般情况比如：s="ab",t="ba"
 # 我自己辣鸡代码：
-class Solution:
+class Solution_39:
     def isAnagram(self,s,t):
         # 空字符情况
         if len(s) == 0:
@@ -45,7 +45,7 @@ class Solution:
             else:
                 return True
 # 我的辣鸡代码在国际站找到了简洁代码
-class Solution(object):
+class Solution_39(object):
     def isAnagram(self, s, t):
         maps = {}
         mapt = {}
@@ -59,14 +59,14 @@ class Solution(object):
 #    3.为什么不需要判断次序???
 
 # 老师的方法：法一：先判断2：sort; 再判断1：是否相等
-class Solution:
+class Solution_39:
     def isAnagram(self,s,t):
         return sorted(s) == sorted(t)
 # PS:没有str.sort(),有sorted(str)
 
 # 法二：hash,map统计每个字符的频次
 # 初始状态数组全为0，让s出现的字符都让数组对应index的值+1，t出现的字符都让数组对应的index的值-1，那么如果s和t是两个字母异位的字符串，最终遍历结束这个数组内的所有值都应该还是为0
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         dic = {}
         
@@ -88,7 +88,7 @@ class Solution:
 # PS:1.本质上也是先判断字母次数是否一样；2.为啥不需要看次序是否一样？？？
 
 # 另一种写法  
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t): return False
         counts = [0] * 26

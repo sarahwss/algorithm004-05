@@ -7,7 +7,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def invertTree(self, root: TreeNode) -> TreeNode:
         def helper(root):
             # terminator

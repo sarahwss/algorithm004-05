@@ -6,7 +6,7 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 end_of_word = '#'
 
-class Solution:
+class Solution_39:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         if not board or not board[0]:
             return []

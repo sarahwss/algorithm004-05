@@ -41,7 +41,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def minDepth(self, root: TreeNode) -> int:
         return self.Depth(root)
     def Depth(self,root):

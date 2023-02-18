@@ -26,7 +26,7 @@
  # 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  #/
 from typing import List
-class Solution:
+class Solution_39:
     def rob(self, nums: List[int]) -> int:
         len_ = len(nums)
         if 0 == len_:
@@ -38,7 +38,7 @@ class Solution:
             dp[i][1] =  dp[i-1][0] + nums[i]
         return max(dp[-1][1],dp[-1][0])
 
-print(Solution().rob([]))
-print(Solution().rob([1]))
-print(Solution().rob([1,2,3,1]))
-print(Solution().rob([2,7,9,3,1]))
+print(Solution_39().rob([]))
+print(Solution_39().rob([1]))
+print(Solution_39().rob([1,2,3,1]))
+print(Solution_39().rob([2,7,9,3,1]))

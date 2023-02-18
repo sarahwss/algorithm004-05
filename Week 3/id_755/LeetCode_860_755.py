@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def lemonadeChange(self, bills: List[int]) -> bool:
         money_had = collections.defaultdict(int)
         for b in bills:

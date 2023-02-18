@@ -18,7 +18,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def jump(self, nums: List[int]) -> int:
         max_position = 0
         end = 0
@@ -34,7 +34,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [2, 3, 1, 1, 4]
     result = solution.jump(nums)

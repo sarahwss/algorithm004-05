@@ -18,13 +18,13 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         pass
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     param = 2
 

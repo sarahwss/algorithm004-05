@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     # solution 1
     # def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     #     dic=collections.defaultdict(list)

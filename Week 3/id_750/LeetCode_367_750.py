@@ -14,7 +14,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     def isPerfectSquare(self, num: int) -> bool:
         left, right = 1, num
         while left < right:
@@ -27,7 +27,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     num = 13
     result = solution.isPerfectSquare(num)

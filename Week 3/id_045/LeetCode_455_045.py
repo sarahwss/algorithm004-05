@@ -2,7 +2,7 @@
 # @des:  贪心 分发饼干
 
 
-class Solution:
+class Solution_39:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         res = 0
         g.sort()

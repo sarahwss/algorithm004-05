@@ -7,7 +7,7 @@ class Node:
 """
 
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         res_lst = []
         queue = collections.deque()

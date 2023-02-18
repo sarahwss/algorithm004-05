@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
         arr = [0 for _ in range(1001)]  # 
         ans = []  #

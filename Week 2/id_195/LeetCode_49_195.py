@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs):
         sorted_strs = {}
         for i in range(len(strs)):

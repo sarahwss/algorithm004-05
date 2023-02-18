@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * 解法一：二分查找，判断左边是升序还是右边是升序，判断是否在升序的范围内
@@ -37,6 +37,6 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $index = $solution->search([4,5,6,7,0,1,2], 0);
 var_dump($index);

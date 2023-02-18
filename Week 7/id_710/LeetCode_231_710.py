@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # 题目: 给定一个整数，编写一个函数来判断它是否是 2 的幂次方
 
-class Solution:
+class Solution_39:
     def isPowerOfTwo_0(self, n: int) -> bool:
         """
         笨办法.遍历二进制码.
@@ -56,7 +56,7 @@ class Solution:
                 n >>= 1
 
 
-s = Solution()
+s = Solution_39()
 
 print(s.isPowerOfTwo_0(4))
 print(s.isPowerOfTwo_1(4))

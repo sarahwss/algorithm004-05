@@ -1,7 +1,7 @@
 ## 94.二叉树的中序遍历
 
 # 迭代法
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         if not root: return []
         arr = []
@@ -18,7 +18,7 @@ class Solution:
         return arr
 
 # 递归
-# class Solution:
+# class Solution_39:
 #     def __init__(self):
 #         self.arr = []
 #     def inorderTraversal(self, root: TreeNode) -> List[int]:

@@ -1,6 +1,6 @@
 # 37. 解数独
 
-class Solution:
+class Solution_39:
     def solveSudoku(self, board: List[List[str]]) -> None:
         row = [set(range(1, 10)) for _ in range(9)]  # 行剩余可用数字
         col = [set(range(1, 10)) for _ in range(9)]  # 列剩余可用数字

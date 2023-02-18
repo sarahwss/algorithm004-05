@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  排序法 求众数  时间复杂度 O（nlg(n)）
 
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int: 
         nums.sort()
         return nums[int(len(nums)/2)]  #条件>n/2，所以排序后，中间元素一定是众数
@@ -11,7 +11,7 @@ class Solution:
 '''
 统计出现的次数
 '''
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int: 
         dic = {}
         for num in nums:
@@ -27,7 +27,7 @@ class Solution:
 # @author:leacoder
 # @des:  摩尔投票法 求众数
 
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int: 
         moore = 0
         count = 0
@@ -45,7 +45,7 @@ class Solution:
 # @author:leacoder
 # @des:  分治 求众数
 
-class Solution:
+class Solution_39:
     def majorityElement(self, nums: List[int]) -> int: 
         def helper(left,right):
             if left == right:

@@ -8,7 +8,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def maxDepth(self, root: TreeNode) -> int:
         def helper(root):
             # terminator
@@ -21,7 +21,7 @@ class Solution:
         return helper(root)
 
 # 对比二叉树的最小深度
-class Solution:
+class Solution_39:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
             return 0

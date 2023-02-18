@@ -32,7 +32,7 @@
 
 
 from  collections import defaultdict
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
 
         ####  边界条件
@@ -75,7 +75,7 @@ class Solution(object):
 参考代码：
 
 
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
         """
         :type beginWord: str

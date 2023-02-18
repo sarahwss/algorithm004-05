@@ -14,7 +14,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def __init__(self):
         self.result = []
 
@@ -35,7 +35,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     n = 3
     result = solution.generateParenthesis(n)
 

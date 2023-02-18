@@ -26,7 +26,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def solve(self, board: list) -> None:
         """ 深度优先搜索 """
         if not board: return
@@ -63,7 +63,7 @@ class Solution:
 #leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     board = [
         ["X", "X", "X", "X"],
         ["X", "O", "O", "X"],

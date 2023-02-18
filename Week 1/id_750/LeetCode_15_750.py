@@ -15,7 +15,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         n = len(nums)
         if not nums or n < 3:
@@ -50,7 +50,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     nums = [-1, 0, 1, 2, -1, -4]
     for i, v in enumerate(nums[:-2]):

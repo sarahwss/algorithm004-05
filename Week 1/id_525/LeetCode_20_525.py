@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def isValid(self, s: str) -> bool:
         d = {')': '(', ']': '[', '}': '{'}
         stack = []

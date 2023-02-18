@@ -1,6 +1,6 @@
 #455. 分发饼干
 
-class Solution(object):
+class Solution_39(object):
     def findContentChildren(self, g, s):
         """
         :type g: List[int]

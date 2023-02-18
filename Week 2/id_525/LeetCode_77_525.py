@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def combine(self, n: int, k: int) -> List[List[int]]:
         result = []
 

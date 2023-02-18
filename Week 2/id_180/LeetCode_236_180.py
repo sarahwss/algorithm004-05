@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def __init__(self):
         self.ans = None
 

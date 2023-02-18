@@ -14,7 +14,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: list, target: int) -> list:
         v_map = {}
         for index, i in enumerate(nums):
@@ -26,7 +26,7 @@ class Solution:
 #leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     nums = [2, 7, 11, 15]
     target = 9
     print(s.twoSum(nums, target))

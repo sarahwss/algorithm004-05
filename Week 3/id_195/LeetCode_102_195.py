@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root: return []
         res = []
@@ -16,7 +16,7 @@ class Solution:
             cur_level = next_level
         return res
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         res = []
 

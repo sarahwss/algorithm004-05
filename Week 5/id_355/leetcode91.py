@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def numDecodings(self, s):
         if s == "": return 0
         dp = [0] * (len(s)+1)

@@ -1,7 +1,7 @@
 # 三角形最小路径和
 # 第一遍
 # DP
-class Solution:
+class Solution_39:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         # 初始化二维数组
         dp = triangle

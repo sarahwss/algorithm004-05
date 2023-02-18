@@ -6,7 +6,7 @@
 #         self.right = None
 
 # recursively
-class Solution(object):
+class Solution_39(object):
     def inorderTraversal(self, root):
         """
         :type root: TreeNode

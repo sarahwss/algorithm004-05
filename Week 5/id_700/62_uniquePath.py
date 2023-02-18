@@ -12,7 +12,7 @@
 #####  一维数组 减少内存空间的使用
 
 
-class Solution:
+class Solution_39:
     def uniquePaths(self,m,n):
         cur = [1]*n #### 将最后一行的1值存储起来
         for i in range(1，m):

@@ -59,7 +59,7 @@
 
 # @lc code=start
 
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         
 # @lc code=end

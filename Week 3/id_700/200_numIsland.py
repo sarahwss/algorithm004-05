@@ -23,7 +23,7 @@
 
 
 ##### 深度优先搜索 递归写法
-class Solution:
+class Solution_39:
     def numIslands(self, grid: List[List[str]]) -> int:
         #####  边界条件不要忘记了 ！！！
         if not grid:
@@ -48,7 +48,7 @@ class Solution:
 
 
 #####  广度优先搜索
-class Solution:
+class Solution_39:
     def numIslands(self, grid: List[List[str]]) -> int:
         #####  边界条件不要忘记了 ！！！
         if not grid:

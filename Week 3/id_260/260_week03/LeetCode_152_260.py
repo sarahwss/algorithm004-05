@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     # @param {integer[]} nums
     # @return {integer}
     def findMin(self, nums):   

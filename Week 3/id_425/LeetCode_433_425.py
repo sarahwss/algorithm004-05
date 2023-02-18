@@ -65,7 +65,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def minMutation(self, start: str, end: str, bank: List[str]) -> int:
         if start == end :
             return 0

@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def letterCombinations(self, digits: str) -> List[str]:
         letterMap = {'2' : 'abc',
                      '3' : 'def',

@@ -1,6 +1,6 @@
 ## 岛屿数量
 
-class Solution:
+class Solution_39:
     def numIslands(self, grid: List[List[str]]) -> int:
         def dfs(grid, i, j):
             if not 0 <= i < len(grid) or not 0 <= j < len(grid[0]) or grid[i][j] == '0': return

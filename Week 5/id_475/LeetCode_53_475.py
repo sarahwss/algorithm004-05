@@ -3,7 +3,7 @@
 # DP:a.重复性：problem(i) = max(sub(i-1)+i,i)  !!!
 #    b.定义状态数组：一维dp[i]
 #    c.DP方程:dp[i] = max(nums[i], dp[i-1]+nums[i])
-class Solution:
+class Solution_39:
     def maxSubArray(self, nums: List[int]) -> int:
         size = len(nums)
         if size == 0:

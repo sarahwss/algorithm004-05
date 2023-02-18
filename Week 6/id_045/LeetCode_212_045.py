@@ -37,7 +37,7 @@ dy = [-1, 1, 0, 0,]
 # 在board 中以当前位置（x0,y0） 上下左右的偏移量 ,上偏移(x0,y0-1) 下偏移（x0,y0+1） 左偏移（x0+1,y0） 右偏移（x0-1,y0）
 
 
-class Solution:
+class Solution_39:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         if not board or not board[0] or not words:
             return []

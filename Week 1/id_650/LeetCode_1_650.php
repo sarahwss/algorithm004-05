@@ -29,7 +29,7 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution_39 {
 
     /**
      * 暴力解法 时间：O(n^2)、空间O(1)

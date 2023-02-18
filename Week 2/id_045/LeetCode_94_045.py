@@ -19,7 +19,7 @@ root节点为空
 '''
 
 
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         result = []
         self.helper(root,result)
@@ -59,7 +59,7 @@ root 以及 left 依次入栈到叶子节点
 '''
 
 
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         result, stack = [], []
         while True:

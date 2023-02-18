@@ -44,7 +44,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Solution_39:
     def rob(self, root: TreeNode) -> int:
         #返回值 (int,int)  (包含根的最大值->抢,不包含根的最大值->不抢)
         def dfs(node: TreeNode) -> (int,int):

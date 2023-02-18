@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     public int removeDuplicates(int[] nums) {
         int firstIndex=0;        
         for(int lastIndex=1;lastIndex<nums.length;lastIndex++ ) {

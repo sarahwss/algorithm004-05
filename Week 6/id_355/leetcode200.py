@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
 
     def numIslands(self, grid):
         self.dx = [-1, 1, 0, 0]

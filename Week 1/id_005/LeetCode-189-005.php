@@ -1,6 +1,6 @@
 <?php
 
-class Solution
+class Solution_39
 {
     /**
      * 看题解的方式：环状替换

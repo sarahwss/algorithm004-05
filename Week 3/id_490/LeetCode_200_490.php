@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/number-of-islands/
  */
 
-class Solution {
+class Solution_39 {
     private $grid;
     private $rows;
     private $cols;
@@ -96,7 +96,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $grid = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]];
 $nums = $solution->numIslands($grid);
 var_dump($nums);

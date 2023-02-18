@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def lowestCommonAncestor(self, root, p, q):
         parent_val = root.val
         p_val = p.val

@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def longestValidParentheses(self, s: str) -> int:
         n = len(s)
         if n == 0: return 0

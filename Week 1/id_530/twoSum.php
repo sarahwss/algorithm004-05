@@ -1,5 +1,5 @@
 <?php
-class Solution {
+class Solution_39 {
 
     /**
 	 * 数组任意俩元素求和

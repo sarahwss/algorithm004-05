@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def postorder(self, root: 'Node') -> List[int]:
         list_trans=[]
         if root==None:

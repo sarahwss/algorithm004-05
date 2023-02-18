@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  二分查找 搜索旋转排序数组
 
-class Solution:
+class Solution_39:
     def search(self, nums: List[int], target: int) -> int:
 
         if not nums:

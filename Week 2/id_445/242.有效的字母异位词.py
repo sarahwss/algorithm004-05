@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     # solution 1
     # def isAnagram(self, s: str, t: str) -> bool:
     #     dic1,dic2={},{}

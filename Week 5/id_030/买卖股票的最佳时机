@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     public int maxProfit(int[] prices) {
         int n = prices.length;
          if ( n < 2) {//不可以交易 只有一天的价格 

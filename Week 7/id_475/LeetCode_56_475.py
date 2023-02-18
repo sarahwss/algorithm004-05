@@ -1,6 +1,6 @@
 # 合并区间
 # 第一遍:排序 + 一次扫描
-class Solution(object):
+class Solution_39(object):
     def merge(self, intervals):
         """
         :type intervals: List[List[int]]

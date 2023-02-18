@@ -18,7 +18,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     def mySqrt(self, x: int) -> int:
         left = 0
         right = x // 2 + 1
@@ -49,7 +49,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
 
     x = 8
     result = solution.mySqrt2(x)

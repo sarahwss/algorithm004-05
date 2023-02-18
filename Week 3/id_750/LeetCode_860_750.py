@@ -46,7 +46,7 @@ from collections import defaultdict
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def lemonadeChange(self, bills: List[int]) -> bool:
         five = 0
         ten = 0
@@ -70,7 +70,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     bills = [5, 5, 5, 10, 20]
     result = solution.lemonadeChange(bills)
     print(result)

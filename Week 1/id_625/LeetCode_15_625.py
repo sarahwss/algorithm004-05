@@ -6,7 +6,7 @@
 
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         res, k = [], 0

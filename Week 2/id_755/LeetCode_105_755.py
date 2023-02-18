@@ -18,7 +18,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
         index_pre = {"index": 0}
 

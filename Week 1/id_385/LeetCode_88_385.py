@@ -30,7 +30,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def merge(self, nums1: list, m: int, nums2: list, n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.

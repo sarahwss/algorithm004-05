@@ -30,7 +30,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     # 1. 暴力法
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         concat = []
@@ -68,4 +68,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    Solution().searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], 3)
+    Solution_39().searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], 3)

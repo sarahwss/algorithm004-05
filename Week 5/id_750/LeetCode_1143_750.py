@@ -30,7 +30,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         t1 = list(text1)
         t2 = list(text2)
@@ -51,7 +51,7 @@ class Solution:
 if __name__ == '__main__':
     text1 = "abn"
     text2 = "av"
-    solution = Solution()
+    solution = Solution_39()
     result = solution.longestCommonSubsequence(text1, text2)
 
     print(result)

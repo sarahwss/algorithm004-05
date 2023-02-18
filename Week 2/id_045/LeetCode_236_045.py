@@ -16,7 +16,7 @@
 上述3条规律对每一子树都成立， 所以只要检查每个节点的 左右子树即可， 所以要用后续遍历
 '''
 
-class Solution: #所有的递归的返回值有4种可能性，None、p、q、公共祖先
+class Solution_39: #所有的递归的返回值有4种可能性，None、p、q、公共祖先
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         # 递归终止条件
         if root is None: #当遍历到叶结点后就会返回None

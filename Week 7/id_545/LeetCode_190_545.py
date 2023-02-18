@@ -1,7 +1,7 @@
 ## 190. 颠倒二进制位
 
 # 方法1
-# class Solution:
+# class Solution_39:
 #     # @param n, an integer
 #     # @return an integer
 #     def reverseBits(self, n):
@@ -12,7 +12,7 @@
 #         return int(''.join(arr), 2)
 
 #方法2
-class Solution:
+class Solution_39:
     # @param n, an integer
     # @return an integer
     def reverseBits(self, n):

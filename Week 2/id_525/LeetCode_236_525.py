@@ -6,7 +6,7 @@ class TreeNode:
         self.right = None
 
 
-class Solution:
+class Solution_39:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         self.result = None
 

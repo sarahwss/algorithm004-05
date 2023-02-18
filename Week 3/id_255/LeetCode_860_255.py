@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def lemonadeChange(self, bills: List[int]) -> bool:
         five,ten=0,0
         for b in bills:

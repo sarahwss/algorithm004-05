@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  排序法 有效的字母异位词
 # 时间复杂度 O(NlogN)
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
         
@@ -9,7 +9,7 @@ class Solution:
 # @author:leacoder
 # @des:  使用map 计算 有效的字母异位词
 # 时间复杂度 O(N)
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         dic1,dic2 = {},{}
         for item in s:

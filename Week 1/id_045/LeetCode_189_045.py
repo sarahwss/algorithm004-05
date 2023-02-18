@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  暴力   旋转数组 O(n*k)
 
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         # 旋转 k 次，每次将数组旋转 1 个元素。
         for i in range(k):
@@ -11,7 +11,7 @@ class Solution:
                 nums[j] = prev
                 prev = temp
 
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums)
         k %= n
@@ -24,7 +24,7 @@ class Solution:
 # @author:leacoder
 # @des:  拼接切片 使用额外的数组  旋转数组 
 
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums)
         k %= n # 处理 k > len(nums)的情况
@@ -35,7 +35,7 @@ class Solution:
 # @author:leacoder
 # @des:  翻转  旋转数组 
 
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums)
         k %= n # 处理 k > len(nums)的情况

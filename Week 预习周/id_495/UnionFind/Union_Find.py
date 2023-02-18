@@ -1,6 +1,6 @@
 #!/anaconda3/bin/python
 
-class Solution:
+class Solution_39:
 
     """
     不是自己写的呦
@@ -25,4 +25,4 @@ class Solution:
         self.data[n] = self.find(b)
 
 if __name__ == '__main__':
-    print(Solution().equationsPossible(["b==a","a==b"]))
+    print(Solution_39().equationsPossible(["b==a","a==b"]))

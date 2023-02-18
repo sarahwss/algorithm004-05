@@ -3,7 +3,7 @@
 # 列表预处理+BFS
 from collections import defaultdict,deque
 
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
         
         def construct_dict(word_list):

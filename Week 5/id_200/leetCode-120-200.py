@@ -3,7 +3,7 @@
 
 
 
-class Solution:
+class Solution_39:
     def minimumTotal(self, triangle):
         if not triangle:
             return 

@@ -6,7 +6,7 @@
 
 # @lc code=start
 import collections
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs):
         tempdict = collections.defaultdict(list)
         for i in strs:
@@ -14,6 +14,6 @@ class Solution:
             tempdict[tuple(key)].append(i) # 只有tuple类型可以hash
         return tempdict.values()
 if __name__ == '__main__':
-	s = Solution()
+	s = Solution_39()
 	strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 	print(s.groupAnagrams(strs))

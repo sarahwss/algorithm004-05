@@ -20,13 +20,13 @@
 链接：https://leetcode-cn.com/problems/power-of-two
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
-class Solution:
+class Solution_39:
     def isPowerOfTwo(self, n: int) -> bool:
         if 0 == n: return False
         return 0 == n&(n-1)
 
 
-print(Solution().isPowerOfTwo(0))
-print(Solution().isPowerOfTwo(2))
-print(Solution().isPowerOfTwo(5))
-print(Solution().isPowerOfTwo(8))
+print(Solution_39().isPowerOfTwo(0))
+print(Solution_39().isPowerOfTwo(2))
+print(Solution_39().isPowerOfTwo(5))
+print(Solution_39().isPowerOfTwo(8))

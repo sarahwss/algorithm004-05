@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         p=[]
         for q in matrix:

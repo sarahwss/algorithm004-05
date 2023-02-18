@@ -3,7 +3,7 @@
 #       a.一个指针遍历寻找高的（外层循环）
 #       b.另一个指针记录矮的位置
 #       矮和首次i碰到高的要交换位置，j+=1继续找矮的
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.

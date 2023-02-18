@@ -1,7 +1,7 @@
 ## 144. 二叉树的前序遍历
 
 # 递归
-# class Solution:
+# class Solution_39:
 #     def __init__(self):
 #         self.arr = []
         
@@ -15,7 +15,7 @@
 
 
 # 迭代法
-class Solution:
+class Solution_39:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         arr = []
         stack = []

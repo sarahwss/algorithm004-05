@@ -8,7 +8,7 @@
 # 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
 # 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-class Solution:
+class Solution_39:
     def maxProfit(self, prices: List[int]) -> int:
         amount = 0
         for i in range(0,len(prices)-1):

@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
 
     # 递归调用 O(n), 注意这里使用了闭包调用递归函数
     def inorderTraversal_1(self, root):

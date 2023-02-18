@@ -16,7 +16,7 @@ import javax.swing.tree.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_39 {
     TreeNode target = null;
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         getNode(root, p, q);

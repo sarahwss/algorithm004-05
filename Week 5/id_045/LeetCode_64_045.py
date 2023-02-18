@@ -17,7 +17,7 @@ dp[i][j] = min(dp[i][j-1],dp[i-1][j]) + grid[i][j]
 
 '''
 
-class Solution:
+class Solution_39:
     def minPathSum(self, grid: List[List[int]]) -> int:
         max_y = len(grid)
         max_x = len(grid[0])
@@ -41,7 +41,7 @@ class Solution:
 
 '''
 
-class Solution:
+class Solution_39:
     def minPathSum(self, grid: List[List[int]]) -> int:
         max_y = len(grid)
         max_x = len(grid[0])

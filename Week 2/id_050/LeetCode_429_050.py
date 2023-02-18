@@ -5,7 +5,7 @@ class Node(object):
         self.val = val
         self.children = children
 """
-class Solution(object):
+class Solution_39(object):
     def levelOrder(self, root):
         """
         :type root: Node
@@ -36,7 +36,7 @@ class Node(object):
         self.children = children
 """
 # update 
-class Solution(object):
+class Solution_39(object):
     def levelOrder(self, root):
         """
         :type root: Node

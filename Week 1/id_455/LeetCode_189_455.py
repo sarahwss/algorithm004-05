@@ -8,7 +8,7 @@
 
 # 方法一
 '''
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -20,7 +20,7 @@ class Solution:
 '''
 #方法二 
 '''
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -31,7 +31,7 @@ class Solution:
 '''
 #方法三 翻转
 '''
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -43,7 +43,7 @@ class Solution:
         nums[k:] = nums[k:][::-1]
 '''
 #方法四  环状替换
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.

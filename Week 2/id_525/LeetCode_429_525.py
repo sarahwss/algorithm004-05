@@ -8,7 +8,7 @@ class Node:
         self.children = children
 
 
-class Solution:
+class Solution_39:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         '''
         使用广度优先遍历

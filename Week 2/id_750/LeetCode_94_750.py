@@ -29,7 +29,7 @@ class TreeNode:
         self.right = None
 
 
-class Solution:
+class Solution_39:
     # 方法1：递归
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res = []

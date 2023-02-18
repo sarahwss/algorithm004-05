@@ -1,5 +1,5 @@
 # 1. 两数之和
-class Solution:
+class Solution_39:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]

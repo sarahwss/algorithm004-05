@@ -8,7 +8,7 @@
  *     function __construct($val) { $this->val = $val; }
  * }
  */
-class Solution
+class Solution_39
 {
     /**
      * recursion

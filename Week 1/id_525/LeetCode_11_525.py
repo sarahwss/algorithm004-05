@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def maxArea(self, height: List[int]) -> int:
         area, l, r = 0, 0, len(height) - 1
         while l < r:

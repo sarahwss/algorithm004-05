@@ -91,7 +91,7 @@ class Trie(object):
         return True
 
 # DFS + Trie
-class Solution(object):
+class Solution_39(object):
 
     def __init__(self):
 

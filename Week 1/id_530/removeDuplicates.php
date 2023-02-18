@@ -1,5 +1,5 @@
 <?php
-class Solution {
+class Solution_39 {
 
     /**
 	 * 从排序数组中删除重复项，并返回非重元素的个数

@@ -24,7 +24,7 @@ class Node:
         self.children = children
 
 
-class Solution:
+class Solution_39:
     def preorder(self, root: 'Node') -> list:
         rdata = []
         if root:
@@ -48,5 +48,5 @@ if __name__ == '__main__':
     root.children = [r3, r2, r4]
     r3.children = [r5, r6]
 
-    s = Solution()
+    s = Solution_39()
     print(s.preorder(root))

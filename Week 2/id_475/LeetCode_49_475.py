@@ -1,7 +1,7 @@
 # 自己的思考的
 # 暴力法：法一：遍历一次,对每个元素进行排序，判断在不在字典里面 O(nlogn)；法二：双指针：一次判断两个元素O(nlogn)
 # 法一：O(NKlogK) 本质在于排序，类比leetcode242的先排序方法
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         _dict = {}
         for i in strs:
@@ -16,7 +16,7 @@ class Solution:
         return res
 # 简洁代码
 # 官方
-class Solution(object):
+class Solution_39(object):
     def groupAnagrams(self, strs):
         ans = collections.defaultdict(list)
         for s in strs:

@@ -20,7 +20,7 @@
    grid[m][n]=Min( dp[m-1][n],dp[m][n-1])
   return grid[0][0]
   
-  class Solution {
+  class Solution_39 {
     public int minPathSum(int[][] grid) {
         int m =grid.length;//列边界
         int n =grid[0].length;//行边界

@@ -1,7 +1,7 @@
 # @author:leacoder
 # @des:  染色法 + DFS 岛屿的个数
 
-class Solution:
+class Solution_39:
 
     # 便于 上下左右扩散
     dx = [-1, 1, 0, 0]
@@ -48,7 +48,7 @@ class Solution:
 # @des:  染色法 + BFS 岛屿的个数
 
 
-class Solution:
+class Solution_39:
 
     # 便于 上下左右扩散
     dx = [-1, 1, 0, 0]

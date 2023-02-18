@@ -1,6 +1,6 @@
 # @author:leacoder
 # @des:   暴力循环  两数之和  O(N*N)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for index1,num1 in enumerate(nums):  #两层循环
             for index2,num2 in enumerate(nums[index1+1:]):
@@ -12,7 +12,7 @@ class Solution:
   
 # @author:leacoder
 # @des:   和固定利用差值diff 两数之和 
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)-1):
             diff = target - nums[i]
@@ -25,7 +25,7 @@ class Solution:
 	
 # @author:leacoder
 # @des:   字典模拟哈希两遍哈希 两数之和  O(n)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap={}
         for index,num in enumerate(nums):
@@ -40,7 +40,7 @@ class Solution:
 
 # @author:leacoder
 # @des:   字典模拟哈希一遍哈希 两数之和  O(n)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap={}
         # 边建立遍检测已建立部分是否存在， 有就立即返回

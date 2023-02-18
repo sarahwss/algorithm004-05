@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # assume strs has n strings, each string has a length k
         # solution 1 : use tuple(sorted(string)) (immutable) as key

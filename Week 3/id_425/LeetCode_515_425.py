@@ -39,7 +39,7 @@
 #         self.left = None
 #         self.right = None
 # 
-class Solution:
+class Solution_39:
     def largestValues(self, root: TreeNode) -> List[int]:
         ret =[]
         if root == None:

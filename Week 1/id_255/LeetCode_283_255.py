@@ -1,5 +1,5 @@
 # 283. 移动零
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums):
         """
         :type nums: List[int]

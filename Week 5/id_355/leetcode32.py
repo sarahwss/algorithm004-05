@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def longestValidParentheses(self, s):
         dp, stack = [0]*(len(s)+1), []
         for i in range(len(s)):

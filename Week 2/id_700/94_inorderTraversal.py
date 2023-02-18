@@ -8,7 +8,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
         self.inorder(root, res)

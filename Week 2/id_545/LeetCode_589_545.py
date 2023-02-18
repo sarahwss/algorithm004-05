@@ -1,7 +1,7 @@
 ## 589. N叉树的前序遍历
 
 # 递归
-# class Solution:
+# class Solution_39:
 #     def __init__(self):
 #         self.arr = []
 #     def preorder(self, root: 'Node') -> List[int]:
@@ -14,7 +14,7 @@
 
 
 # 栈 迭代
-class Solution:
+class Solution_39:
     def preorder(self, root: 'Node') -> List[int]:
         if not root: return []
         stack = [root]

@@ -59,7 +59,7 @@
 
 # @lc code=start
 from collections import defaultdict
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList:
             return 0

@@ -1,7 +1,7 @@
 # LeetCode 63 不同路径
 # 第一遍
 # DP：自底向上
-class Solution:
+class Solution_39:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         # 特殊情况！！
         if obstacleGrid[0][0] == 1:

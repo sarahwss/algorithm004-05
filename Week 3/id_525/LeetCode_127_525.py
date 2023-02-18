@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
         """
         :type beginWord: str

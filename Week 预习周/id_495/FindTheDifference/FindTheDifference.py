@@ -1,7 +1,7 @@
 #!/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution_39(object):
 
     @staticmethod
     def findTheDifference(s, t):
@@ -13,4 +13,4 @@ class Solution(object):
         return chr(sum2 - sum1)
 
 if __name__ == '__main__':
-    print(Solution.findTheDifference("asdf","sdxfa"))
+    print(Solution_39.findTheDifference("asdf","sdxfa"))

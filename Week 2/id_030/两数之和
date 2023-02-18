@@ -1,5 +1,5 @@
 上周老师教的暴力循环
-class Solution {
+class Solution_39 {
     
     public int[] twoSum(int[] nums, int target) {
       int[] result = new int[2];
@@ -15,7 +15,7 @@ class Solution {
     }
 }
 这周通过使用HashMap来降低遍历时所需要的时间复杂度
-class Solution {
+class Solution_39 {
     
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> temp=new HashMap<Integer,Integer>();

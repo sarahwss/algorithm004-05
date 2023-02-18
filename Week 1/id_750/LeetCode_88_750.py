@@ -16,7 +16,7 @@ nums2 = [2,5,6],       n = 3
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
@@ -47,7 +47,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = Solution_39()
     nums1 = [7, 8, 9, 0, 0, 0]
     nums2 = [2, 5, 6]
     m = 3

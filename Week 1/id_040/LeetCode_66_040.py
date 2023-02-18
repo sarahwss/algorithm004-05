@@ -22,7 +22,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def plusOne(self, digits: list) -> list:
         """
         直接加
@@ -52,7 +52,7 @@ class Solution:
 
 #leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
 
     digits = [9]
 

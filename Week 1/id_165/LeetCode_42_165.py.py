@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def trap(self, height):
         """
         :type height: List[int]
@@ -30,4 +30,4 @@ class Solution(object):
         return result
 
 
-print(Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1]))
+print(Solution_39().trap([0,1,0,2,1,0,1,3,2,1,2,1]))

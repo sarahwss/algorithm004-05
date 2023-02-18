@@ -6,7 +6,7 @@ class TreeNode(object):
         self.right = None
 
 
-# class Solution(object):
+# class Solution_39(object):
 #
 #     def __init__(self):
 #
@@ -27,7 +27,7 @@ class TreeNode(object):
 #             self.inorderTraversal(root.right)
 
 
-class Solution(object):
+class Solution_39(object):
 
     def __init__(self):
 

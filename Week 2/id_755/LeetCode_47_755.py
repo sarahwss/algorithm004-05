@@ -1,5 +1,5 @@
 
-class Solution:
+class Solution_39:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         res_lst = []
         def dfs(index_lst, curr_lst):

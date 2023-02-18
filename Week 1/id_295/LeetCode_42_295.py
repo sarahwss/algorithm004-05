@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         res, left, right, left_max, right_max = 0, 0, len(height) - 1, 0, 0
         while left < right:

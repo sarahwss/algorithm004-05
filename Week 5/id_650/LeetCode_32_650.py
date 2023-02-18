@@ -32,7 +32,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def longestValidParentheses(self, s: str) -> int:
         """
         DP思路：

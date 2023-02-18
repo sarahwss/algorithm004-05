@@ -34,7 +34,7 @@
 
 
 #leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def reverseBits(self, n: int) -> int:
         ans, MASK = 0, 1
         for i in range(32):
@@ -47,5 +47,5 @@ class Solution:
 
 #leetcode submit region end(Prohibit modification and deletion)
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     print(s.reverseBits(43261596))

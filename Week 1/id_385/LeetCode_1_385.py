@@ -25,7 +25,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # 为数组中的数字建立索引
         num_map = {}

@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def maxProfit(self, prices: List[int]) -> int:
         dp = [[[0 for _ in range(2)] for _ in range(2)]
         for _ in range(len(prices))]

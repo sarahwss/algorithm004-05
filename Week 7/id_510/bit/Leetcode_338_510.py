@@ -20,7 +20,7 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
 from typing import List
-class Solution:
+class Solution_39:
     def countBits(self, num: int) -> List[int]:
         dp = [0 for _ in range(num+1)]
         #dp[i] = dp[i>>1] + (i & 1)  i 的1的个数位 i>>1 值 左移动一位  最后一位补0或1  则i&1 值位1 则末位数位1 

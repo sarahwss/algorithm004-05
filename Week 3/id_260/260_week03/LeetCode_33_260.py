@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def search(self, nums, target):
         if not nums:
             return -1

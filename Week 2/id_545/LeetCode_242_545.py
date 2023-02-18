@@ -1,12 +1,12 @@
 ## 242. 有效的字母异位词
 
 # 排序 比较是否相等
-# class Solution:
+# class Solution_39:
 #     def isAnagram(self, s: str, t: str) -> bool:
 #         return sorted(s) == sorted(t)
 
 # 哈希表
-# class Solution:
+# class Solution_39:
 #     def isAnagram(self, s: str, t: str) -> bool:
 #         if len(s) != len(t): return False
 #         dct = {}
@@ -18,7 +18,7 @@
 #         return True
 
 # 集合
-class Solution:
+class Solution_39:
     def isAnagram(self, s: str, t: str) -> bool:
         t_set = set(t)
         if len(s) != len(t) or t_set != set(s): return False

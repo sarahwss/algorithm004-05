@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def solveNQueens(self, n):
         def dfs(queens, xy_sub, xy_plus):
             row = len(queens)

@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution_39(object):
     def preorder(self, root):
         if not root: return []
         res = []

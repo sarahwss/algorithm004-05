@@ -28,7 +28,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         col = len(obstacleGrid)
         row = len(obstacleGrid[0])
@@ -52,7 +52,7 @@ class Solution:
 
 if __name__ == '__main__':
     obstacleGrid = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
-    solution = Solution()
+    solution = Solution_39()
     result = solution.uniquePathsWithObstacles(obstacleGrid)
 
     print(result)

@@ -3,7 +3,7 @@
 
  # 类似于 200. 岛屿数量 
 
-class Solution:
+class Solution_39:
     
     def findCircleNum(self, M: List[List[int]]) -> int:
         if not M or not M[0]:
@@ -31,7 +31,7 @@ class Solution:
 # @author:leacoder
 # @des:  并查集 朋友圈
 
-class Solution:
+class Solution_39:
     def findCircleNum(self, M: List[List[int]]) -> int:
         if not M:
             return 0

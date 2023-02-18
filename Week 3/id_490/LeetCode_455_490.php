@@ -4,7 +4,7 @@
  * 题目链接：https://leetcode-cn.com/problems/assign-cookies/
  */
 
-class Solution {
+class Solution_39 {
 
     /**
      * @param Integer[] $children
@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-$solution = new Solution();
+$solution = new Solution_39();
 $children = [1, 2, 3]; 
 $cookies = [1, 2];
 $index = $solution->findContentChildren($children, $cookies);

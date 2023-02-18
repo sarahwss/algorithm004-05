@@ -1,5 +1,5 @@
 # 33. 搜索旋转排序数组
-class Solution:
+class Solution_39:
     def search(self, nums: List[int], target: int) -> int:
         left,right=0,len(nums)-1
         while left<=right:

@@ -1,6 +1,6 @@
 # 26. 删除排序数组中的重复项
 # 使用双指针-->快慢指针
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0
         for j in range(1,len(nums)):
@@ -10,7 +10,7 @@ class Solution:
         return i + 1 
 
 # 189. 旋转数组
-class Solution:
+class Solution_39:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -20,7 +20,7 @@ class Solution:
         nums[:] = nums[n-k:] + nums[:n-k]
 
 # 21. 合并两个有序链表
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         # 法1
         if l1 and l2:
@@ -45,7 +45,7 @@ class Solution:
         return prehead.next
 
 # 1. 两数之和
-class Solution:
+class Solution_39:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -66,7 +66,7 @@ class Solution:
                 dic[target - num] = i
 
 #  88. 合并两个有序数组
-class Solution:
+class Solution_39:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
@@ -97,7 +97,7 @@ class Solution:
         nums1.sort()    
 
 # 66. 加一
-class Solution:
+class Solution_39:
     def plusOne(self, digits):
         """
         :type digits: List[int]
@@ -113,7 +113,7 @@ class Solution:
         return digits
     
 # 283. 移动零
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums):
         """
         :type nums: List[int]
@@ -217,7 +217,7 @@ class MyCircularDeque:
         return False
 
 # 42. 接雨水
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         if not height: return 0
         n = len(height)

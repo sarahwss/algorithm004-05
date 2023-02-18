@@ -1,6 +1,6 @@
 # 第一遍
 # 递归法
-class Solution:
+class Solution_39:
     def generateParenthesis(self, n):
         res = []
         def helper(left, right, s):

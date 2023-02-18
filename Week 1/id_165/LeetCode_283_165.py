@@ -17,7 +17,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-# class Solution(object):
+# class Solution_39(object):
 #     def moveZeroes(self, nums):
 #         """
 #         :type nums: List[int]
@@ -37,7 +37,7 @@
 #
 
 
-class Solution(object):
+class Solution_39(object):
     def moveZeroes(self, nums):
         """
         :type nums: List[int]

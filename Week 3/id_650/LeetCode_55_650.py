@@ -36,7 +36,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def canJump(self, nums: List[int]) -> bool:
         """
         思路：

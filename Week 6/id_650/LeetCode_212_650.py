@@ -46,7 +46,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         if not board or not board[0]: return []
         if not words: return []

@@ -30,7 +30,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def solveNQueens(self, n: int) -> List[List[str]]:
         if n < 1: return []
         self.result = []
@@ -72,4 +72,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    Solution().solveNQueens(4)
+    Solution_39().solveNQueens(4)

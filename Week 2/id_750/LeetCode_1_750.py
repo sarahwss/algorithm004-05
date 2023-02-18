@@ -13,7 +13,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     # 方法1：暴力法
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
@@ -33,7 +33,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     nums = [2, 7, 11, 15]
     target = 9
     result = s.twoSum(nums, target)

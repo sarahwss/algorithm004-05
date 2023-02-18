@@ -25,7 +25,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
+class Solution_39:
     def numDecodings(self, s):
         pp, p = 1, int(s[0] != '0')
         for i in range(1, len(s)):

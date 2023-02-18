@@ -1,5 +1,5 @@
 //第一次尝试
-class Solution {
+class Solution_39 {
 
     /**
      * @param Integer[] $nums

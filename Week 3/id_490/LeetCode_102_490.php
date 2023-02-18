@@ -22,7 +22,7 @@
  *     function __construct($value) { $this->val = $value; }
  * }
  */
-class Solution {
+class Solution_39 {
 
     /**
      * 第一种解法：迭代法

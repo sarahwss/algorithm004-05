@@ -1,4 +1,4 @@
-class Solution {
+class Solution_39 {
     public int[] plusOne(int[] digits) {
         /**从高位开始一次计算，是否需要进位*/
         if (digits.length == 0 || digits == null)

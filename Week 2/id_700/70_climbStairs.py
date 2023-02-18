@@ -14,7 +14,7 @@
 
 ##### fibonicc
 #
-# class Solution:
+# class Solution_39:
 #     def climbStairs(self, n: int) -> int:
 #         fib, count = [1, 2], 2
 #         while count < n:
@@ -28,7 +28,7 @@
 # f(n)= f(n-2)+f(n-1)
 
 
-class Solution:
+class Solution_39:
     def climbStairs(self, n: int) -> int:
         if n ==1:
             return 1
@@ -39,7 +39,7 @@ class Solution:
 
 
 #
-# class Solution:
+# class Solution_39:
 #     def climbStairs(self, n: int) -> int:
 #         if n < 1:
 #             return 0

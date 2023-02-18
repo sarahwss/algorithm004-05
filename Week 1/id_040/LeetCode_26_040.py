@@ -42,7 +42,7 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 
 # 第一遍 2019年10月16日
-class Solution(object):
+class Solution_39(object):
     def removeDuplicates1(self, nums):
         """
         :type nums: List[int]
@@ -81,7 +81,7 @@ class Solution(object):
 # leetcode submit region end(Prohibit modification and deletion)
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
     print(s.removeDuplicates2(nums))
     print(nums)

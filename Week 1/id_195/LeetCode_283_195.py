@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def moveZeroes(self, nums):
         return self.moveZeroes_1(nums)
 
@@ -23,6 +23,6 @@ class Solution:
                 head += 1
         return nums_new
 if __name__ == '__main__':
-    solve = Solution()
+    solve = Solution_39()
     testCase = [1, 0, 3, 5, 0, 0, 10]
     print(solve.moveZeroes_2(testCase))

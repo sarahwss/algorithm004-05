@@ -7,7 +7,7 @@ cash 记录手中零钱数（5 10 20美元数量）
 '''
 
 
-class Solution:
+class Solution_39:
     def lemonadeChange(self, bills: List[int]) -> bool:
         cash = {"5":0,"10":0,"20":0}
         for bill in bills:

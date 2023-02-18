@@ -24,7 +24,7 @@
 """
 
 
-class Solution:
+class Solution_39:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[1] * n] + [[1] + [0] * (n - 1) for _ in range(m - 1)]
         for i in range(1, m):
@@ -43,7 +43,7 @@ class Solution:
 if __name__ == '__main__':
     n = 4
     m = 5
-    solution = Solution()
+    solution = Solution_39()
     result = solution.uniquePaths2(m, n)
 
     print(result)

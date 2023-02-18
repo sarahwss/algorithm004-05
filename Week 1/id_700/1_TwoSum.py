@@ -8,7 +8,7 @@
 
 ####  思路1. 暴力求解，双重循环，超出时间限制
 
-class Solution:
+class Solution_39:
     def twoSum(self,nums:List[int],target:int)->List[int]:
         for i in range(len(nums)-1):
             for j in range(1,len(nums)):
@@ -16,7 +16,7 @@ class Solution:
                     return i,j
 
 
-class Solution:
+class Solution_39:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)-1):
             j =i+1

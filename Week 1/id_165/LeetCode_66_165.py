@@ -21,7 +21,7 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution(object):
+class Solution_39(object):
     def plus1(self, digits):
         """
         :type digits: List[int]

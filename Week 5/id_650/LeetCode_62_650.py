@@ -44,7 +44,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def uniquePaths(self, m: int, n: int) -> int:
         if m <= 0 or n <= 0:return 0
         if m <=1 or n <= 1:return 1

@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     # 排序， 比较
     def isAnagram_1(self, s: str, t: str) -> bool:
         s = sorted(s)
@@ -46,5 +46,5 @@ class Solution:
 if __name__ == '__main__':
     testCase_s = "anagram"
     testCase_t = "nagaram"
-    solution = Solution()
+    solution = Solution_39()
     print(solution.isAnagram_2(testCase_s, testCase_t))

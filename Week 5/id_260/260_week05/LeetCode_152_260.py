@@ -1,4 +1,4 @@
-# class Solution(object):
+# class Solution_39(object):
 #     def maxProduct(self, nums):
 #         """
 #         :type nums: List[int]
@@ -16,7 +16,7 @@
 #             pre_min = cur_min
 #         return res
 
-class Solution:
+class Solution_39:
     def maxProduct(self, nums):
         mi = ma = res = nums[0]
         for i in range(1, len(nums)):

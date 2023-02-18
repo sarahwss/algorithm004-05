@@ -7,7 +7,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+class Solution_39:
     def isValidBST(self, root: TreeNode) -> bool:
         def helper(root, lower, upper):
             # terminator

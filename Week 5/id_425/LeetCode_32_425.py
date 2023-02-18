@@ -39,7 +39,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def longestValidParentheses(self, s: str) -> int:
         # 第一，找到成组的括号序号
         if not s:

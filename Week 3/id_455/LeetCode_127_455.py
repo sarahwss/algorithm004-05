@@ -6,7 +6,7 @@
 
 # @lc code=start
 import collections
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         
         if endWord not in wordList or not beginWord or not endWord or not wordList:

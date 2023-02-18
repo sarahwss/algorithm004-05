@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         def return_first(lst):
             return lst[0]

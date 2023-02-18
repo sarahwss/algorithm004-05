@@ -1,6 +1,6 @@
 #200. 岛屿数量
 
-class Solution:
+class Solution_39:
     dx=[-1,1,0,0]
     dy=[0,0,-1,1]
     def numIslands(self, grid: List[List[str]]) -> int:

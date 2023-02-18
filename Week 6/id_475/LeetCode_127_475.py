@@ -1,6 +1,6 @@
 # 单词接龙
 # 法一：单向BFS
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         wordList = set(wordList)
         if endWord not in wordList:
@@ -41,7 +41,7 @@ class Solution:
         return BFS(endWord, d)
 
 # 法一：另一种优化写法（法二基于这种写法进行双向BFS）
-class Solution(object):
+class Solution_39(object):
     def ladderLength(self, beginWord, endWord, wordList):
         wordList = set(wordList)
         queue = collections.deque([[beginWord, 1]])
@@ -59,7 +59,7 @@ class Solution(object):
 
 # 法二：双向BFS
 import string 
-class Solution:
+class Solution_39:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList: return 0
 

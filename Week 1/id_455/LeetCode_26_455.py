@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         pre,cur = 0,1
         while cur < len(nums):

@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         trans_list=[]
         if root==None:

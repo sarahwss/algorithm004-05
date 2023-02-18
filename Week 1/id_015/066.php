@@ -1,5 +1,5 @@
 <?php
-class Solution {
+class Solution_39 {
   // 1. 直接使用游标从尾部向前走
   /**
    * @param Integer[] $digits

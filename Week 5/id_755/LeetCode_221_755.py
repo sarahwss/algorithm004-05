@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         num_rows = len(matrix)
         if num_rows == 0:

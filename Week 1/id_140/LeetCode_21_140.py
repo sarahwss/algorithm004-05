@@ -8,7 +8,7 @@ class ListNode:
         self.val = x
         self.next = None
         
-class Solution:
+class Solution_39:
     # 目前只学到了1种解题方法
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         prehead = ListNode(-1)

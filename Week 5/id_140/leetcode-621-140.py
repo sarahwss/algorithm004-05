@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-class Solution:
+class Solution_39:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         res = 0
         #使用哈希表存储task的数量以便于查找

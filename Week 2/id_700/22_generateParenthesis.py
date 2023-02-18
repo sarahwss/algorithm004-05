@@ -31,7 +31,7 @@ def generateParenthesis(level,n,s):
     ### reverse level
 
 
-class Solution(object):
+class Solution_39(object):
     def generateParenthesis(self, n):
         def generate(A = []):
             if len(A) == 2*n:
@@ -57,7 +57,7 @@ class Solution(object):
         generate()
         return ans
 
-class Solution(object):
+class Solution_39(object):
     def generateParenthesis(self,n):
         def generate(A = []):
             if len(A) == 2 * n:
@@ -90,7 +90,7 @@ class Solution(object):
 
 
 ###  错误的写法
-# class Solution(object):
+# class Solution_39(object):
 #     def generateParenthesis(self,n):
 #          A = []
 #         def generate(S = '',left,right,n)
@@ -105,7 +105,7 @@ class Solution(object):
 #             generate(left +1,right,"(")
 #             generate(left,right +1,")")
 
-class Solution(object):
+class Solution_39(object):
     def generateParenthesis(self, N):
         ans = []
         def backtrack(S = '', left = 0, right = 0):
@@ -121,7 +121,7 @@ class Solution(object):
         return ans
 
 
-class Solution:
+class Solution_39:
     def generateParenthesis(self, n: int) -> List[str]:
 
         A = []

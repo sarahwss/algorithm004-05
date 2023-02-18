@@ -1,7 +1,7 @@
 #52. N皇后 II
 
        
-class Solution:
+class Solution_39:
     def totalNQueens(self, n): 
         if n < 1: return [] 
         self.count = 0 

@@ -3,7 +3,7 @@
 '''
 box_index = (row / 3) * 3 + columns / 3，其中 / 是整数除法。
 '''
-class Solution:
+class Solution_39:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         # 初始化
         rows = [{} for i in range(9)]   # 每一行 数值 0 -9 出现次数

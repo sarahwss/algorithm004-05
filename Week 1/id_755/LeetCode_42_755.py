@@ -2,7 +2,7 @@
 # space complexity: O(n)
 
 
-class Solution:
+class Solution_39:
     def trap(self, height: List[int]) -> int:
         def left_scan(height):
             left_height = []

@@ -1,6 +1,6 @@
 # solution 1
 # add possible col position to pos_lst inside dfs function
-class Solution:
+class Solution_39:
     def solveNQueens(self, n: int) -> List[List[str]]:
         if n == 0:
             return []
@@ -32,7 +32,7 @@ class Solution:
     
 # solution 2
 # add results outside the dfs function
-class Solution:
+class Solution_39:
     def solveNQueens(self, n: int) -> List[List[str]]:
         if n == 0:
             return []

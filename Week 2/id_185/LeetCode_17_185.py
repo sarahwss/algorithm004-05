@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def letterCombinations(self, digits: str) -> List[str]:
         
         phone_dict = {"2": ["a", "b", "c"],

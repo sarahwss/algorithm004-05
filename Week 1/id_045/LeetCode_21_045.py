@@ -21,7 +21,7 @@
 
 '''
 
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         if l1 is None:
             return l2
@@ -60,7 +60,7 @@ prehead= ListNode(-1)
 
 '''
 
-class Solution:
+class Solution_39:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         # 利用哨兵简化操作
         prehead= ListNode(-1)

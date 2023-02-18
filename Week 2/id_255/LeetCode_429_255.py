@@ -1,4 +1,4 @@
-class Solution:
+class Solution_39:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         if root==None:
             return []

@@ -1,7 +1,7 @@
 from typing import List
 
 
-class Solution:
+class Solution_39:
     def removeDuplicates(self, nums: List[int]) -> int:
         if len(nums) == 0:
             return 0
@@ -14,4 +14,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    Solution().removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
+    Solution_39().removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])

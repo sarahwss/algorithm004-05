@@ -32,7 +32,7 @@
 """
 
 
-class Solution(object):
+class Solution_39(object):
     def hammingWeight(self, n):
         """
         :type n: int
@@ -64,7 +64,7 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    s = Solution()
+    s = Solution_39()
     n = -3
     result = s.hammingWeight3(n)
 

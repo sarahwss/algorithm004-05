@@ -57,7 +57,7 @@
 # 中序遍历，验证排序
 # 递归 右子树带下界，左子树带上界，
 # 返回值：是否，参数：根节点，上界，下界
-class Solution:
+class Solution_39:
     def isValidBST(self, root: TreeNode) -> bool:
 
         return self.isok(root)

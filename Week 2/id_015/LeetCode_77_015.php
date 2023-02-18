@@ -1,5 +1,5 @@
 <?php
-class Solution {
+class Solution_39 {
     private $result;
     /**
      * @param Integer $n
