@@ -55,8 +55,7 @@ package leetcode.editor.cn;//给定一个只包括 '('，')'，'{'，'}'，'['�
 // 👍 2512 👎 0
 
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution_20 {
@@ -94,6 +93,9 @@ class Solution_20 {
                 deque.offerFirst(c);
             }
         }
+        PriorityQueue p = new PriorityQueue();
+        Arrays.sort();
+
         // 左括号多余
         return deque.isEmpty();
     }
